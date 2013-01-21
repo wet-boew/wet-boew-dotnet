@@ -1,0 +1,15 @@
+﻿@charset "utf-8";/*!
+ *
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt
+ *
+ * Version: v3.0.1
+ *
+ */@media screen,print
+ {
+    form {margin-left:0;margin-right:0;padding-bottom: 0px;padding-top: 0px;}
+    form h2, form h3, form h4, form h5, form h6 {border-bottom:inherit;color:inherit;}            
+    form h2, form h3, form h4, form h5, form h6 {margin-left:10px;margin-right:10px;}  
+    
+    .module-form{margin-left: 10px;margin-right: 10px;}
+}

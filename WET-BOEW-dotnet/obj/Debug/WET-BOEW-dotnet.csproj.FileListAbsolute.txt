@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WET-BOEWv3.0\WET-BOEW-dotnet\WET-BOEW-dotnet\bin\WET-BOEW-dotnet.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WET-BOEWv3.0\WET-BOEW-dotnet\WET-BOEW-dotnet\bin\WET-BOEW-dotnet.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WET-BOEWv3.0\WET-BOEW-dotnet\WET-BOEW-dotnet\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WET-BOEWv3.0\WET-BOEW-dotnet\WET-BOEW-dotnet\obj\Debug\WET-BOEW-dotnet.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WET-BOEWv3.0\WET-BOEW-dotnet\WET-BOEW-dotnet\obj\Debug\WET-BOEW-dotnet.pdb
