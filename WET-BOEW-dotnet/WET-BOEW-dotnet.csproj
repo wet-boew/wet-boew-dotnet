@@ -55,6 +55,9 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Includes\menu-eng.txt" />
+    <Content Include="Includes\menu-fra.txt" />
+    <Content Include="App_Master\Base.aspx" />
     <Content Include="App_Master\LangSwitcher.ascx" />
     <Content Include="App_Master\ModificationDate.ascx" />
     <Content Include="Content.aspx" />
@@ -359,7 +362,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\BaseClass.cs" />
     <Compile Include="App_GlobalResources\GCWU_FEGC.designer.cs">
       <DependentUpon>GCWU_FEGC.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -369,6 +371,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GCWU_FEGC.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Master\Base.aspx.cs">
+      <DependentUpon>Base.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Master\Base.aspx.designer.cs">
+      <DependentUpon>Base.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Master\GCWU-1col.Master.cs">
       <DependentUpon>GCWU-1col.Master</DependentUpon>
@@ -404,6 +413,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

@@ -24,13 +24,15 @@ namespace WET_BOEW_dotnet.App_Master
 
             if (myLanguage == "english")
             {
-                Thread.CurrentThread.CurrentCulture = new CultureInfo("en-CA");
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+                //Thread.CurrentThread.CurrentCulture = new CultureInfo("en-CA");
+               // Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+                Session["l"] = "en";
             }
             else
             {
-                Thread.CurrentThread.CurrentCulture = new CultureInfo("fr-CA");
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr");
+               // Thread.CurrentThread.CurrentCulture = new CultureInfo("fr-CA");
+               // Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr");
+                Session["l"] = "fr";
             }
             Response.Redirect(Request.RawUrl);
         }

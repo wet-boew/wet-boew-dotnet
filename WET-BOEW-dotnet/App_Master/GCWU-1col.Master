@@ -57,28 +57,31 @@ wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Lice
 <nav role="navigation"><div id="gcwu-gcnb"><h2><asp:Literal ID="ltlGoCBarHead" runat="server"/></h2><div id="gcwu-gcnb-in"><div id="gcwu-gcnb-fip">
 <div id="gcwu-sig"><div id="gcwu-sig-in"><asp:Literal ID="ltlDivSig" Text="<%$ Resources:GCWU_FEGC, ltlDivSig %>" runat="server"/></div></div>
 <ul>
-<li id="gcwu-gcnb1"><a rel="external" href="http://www.canada.gc.ca/menu-eng.html">Canada.gc.ca</a></li>
-<li id="gcwu-gcnb2"><a rel="external" href="http://www.servicecanada.gc.ca/eng/home.shtml">Services</a></li>
-<li id="gcwu-gcnb3"><a rel="external" href="http://www.canada.gc.ca/aboutgov-ausujetgouv/depts/menu-eng.html">Departments</a></li>
+<li id="gcwu-gcnb1"><asp:HyperLink ID="hlkCdnLink" rel="external" runat="server" text="<%$ Resources:GCWU_FEGC, CDNLinkText %>" NavigateUrl="<%$ Resources:GCWU_FEGC, CDNLinkUrl %>"/></li>
+<li id="gcwu-gcnb2"><asp:HyperLink ID="hlkServices" rel="external" text="<%$ Resources:GCWU_FEGC, ServiceText %>" NavigateUrl="<%$ Resources:GCWU_FEGC, ServiceUrl %>" runat="server" /></li>
+<li id="gcwu-gcnb3"><asp:HyperLink ID="HyperLink1" rel="external" text="<%$ Resources:GCWU_FEGC, DeptText %>" NavigateUrl="<%$ Resources:GCWU_FEGC, DeptUrl %>" runat="server" /></li>
 <li id="gcwu-gcnb-lang"><uc1:ucLang ID="ucLang" runat="server" /></li>
 </ul>
 </div></div></div></nav>
 
 <div id="gcwu-bnr" role="banner"><div id="gcwu-bnr-in">
-<div id="gcwu-wmms"><div id="gcwu-wmms-in"><div id="gcwu-wmms-fip" title="Symbol of the Government of Canada"><img src="../../build/theme-gcwu-fegc/images/wmms.gif" width="126" height="30" alt="Symbol of the Government of Canada" /></div></div></div>
-<div id="gcwu-title"><p id="gcwu-title-in"><a href="../../index-eng.html">Web Experience Toolkit&#160;(WET)</a></p></div>
+<div id="gcwu-wmms"><div id="gcwu-wmms-in"><asp:Literal ID="ltlwmmsdiv" Text="<%$ Resources:GCWU_FEGC, wmmsDivTxt %>" runat="server"/><asp:Image ID="imgWMMS" AlternateText="<%$ Resources:GCWU_FEGC, wmmsTxt %>" ImageUrl="/theme/theme-gcwu-fegc/images/wmms.gif" width="126" height="30" runat="server"/></div></div></div>
+<div id="gcwu-title"><p id="gcwu-title-in"><asp:HyperLink ID="hlkHome" Text="<%$ Resources:GCWU_FEGC, SiteName %>" NavigateUrl="/Content.aspx" runat="server"/></p></div>
 
-<section role="search"><div id="gcwu-srchbx"><h2>Search</h2>
+<section role="search"><div id="gcwu-srchbx"><h2><asp:Literal ID="ltlSrchHead" runat="server" Text="<%$ Resources:GCWU_FEGC, SrchHead %>"/></h2>
 <%--form action="#" method="post"--%><div id="gcwu-srchbx-in">
-<label for="gcwu-srch">Search website</label><input id="gcwu-srch" name="gcwu-srch" type="search" value="" size="27" maxlength="150" />
-<input id="gcwu-srch-submit" name="gcwu-srch-submit" type="submit" value="Search" data-icon="search" />
+<asp:Label ID="lblSearch" AssociatedControlID="gcwu_srch" runat="server" Text="<%$ Resources:GCWU_FEGC, Srchlbl %>"/>
+<asp:TextBox ID="gcwu_srch" runat="server" type="search" MaxLength="150"/>
+<asp:Button ID="gcwu_srch_submit" runat="server" data-icon="search" Text="<%$ Resources:GCWU_FEGC, btnSrch %>"/>
 </div><%--/form--%>
 </div></section>
-</div></div>
+</div>
+    </div>
 
 <nav role="navigation">
-<div id="gcwu-psnb"><h2><span>Site </span>menu</h2><div id="gcwu-psnb-in"><div class="wet-boew-menubar mb-mega"><div>
-<ul class="mb-menu"><!-- data-ajax-replace="../includes/menu-eng.txt"-->
+<div id="gcwu-psnb"><h2><asp:Literal ID="ltlMenuHeader" Text="<%$ Resources:GCWU_FEGC, SiteMenuHeader %>" runat="server"/></h2><div id="gcwu-psnb-in"><div class="wet-boew-menubar mb-mega"><div>
+<%--<ul class="mb-menu" data-ajax-replace="">--%>
+<asp:Literal ID="Literal1" runat="server" Text="<%$ Resources:GCWU_FEGC, MenuInclude %>"/>
 <li><div><a href="http://wet-boew.github.com/wet-boew/index-eng.html">WET project</a></div></li>
 <li><div><a href="section2/index-eng.html">Section 2</a></div></li>
 <li><div><a href="#">Section 3</a></div></li>

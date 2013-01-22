@@ -132,4 +132,46 @@
   <data name="ltlGoCBarHead" xml:space="preserve">
     <value>Government of Canada navigation bar</value>
   </data>
+  <data name="btnSrch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="CDNLinkText" xml:space="preserve">
+    <value>Canada.gc.ca</value>
+  </data>
+  <data name="CDNLinkUrl" xml:space="preserve">
+    <value>http://www.canada.gc.ca/menu-eng.html</value>
+  </data>
+  <data name="DeptText" xml:space="preserve">
+    <value>Departments</value>
+  </data>
+  <data name="DeptUrl" xml:space="preserve">
+    <value>http://www.canada.gc.ca/aboutgov-ausujetgouv/depts/menu-eng.html</value>
+  </data>
+  <data name="MenuInclude" xml:space="preserve">
+    <value>&lt;ul class="mb-menu" data-ajax-replace="/Includes/menu-eng.txt"&gt;</value>
+  </data>
+  <data name="ServiceText" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="ServiceUrl" xml:space="preserve">
+    <value>http://www.servicecanada.gc.ca/eng/home.shtml</value>
+  </data>
+  <data name="SiteMenuHeader" xml:space="preserve">
+    <value>&lt;span&gt;Site &lt;/span&gt;menu</value>
+  </data>
+  <data name="SiteName" xml:space="preserve">
+    <value>Web Experience Toolkit (WET)</value>
+  </data>
+  <data name="SrchHead" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Srchlbl" xml:space="preserve">
+    <value>Search website</value>
+  </data>
+  <data name="wmmsDivTxt" xml:space="preserve">
+    <value>&lt;div id="gcwu-wmms-fip" title="Symbol of the Government of Canada"&gt;</value>
+  </data>
+  <data name="wmmsTxt" xml:space="preserve">
+    <value>Symbol of the Government of Canada</value>
+  </data>
 </root>

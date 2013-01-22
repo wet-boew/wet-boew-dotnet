@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WET_BOEW_dotnet
 {
-	public partial class Content : System.Web.UI.Page
+	public partial class Content : App_Master.Base
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

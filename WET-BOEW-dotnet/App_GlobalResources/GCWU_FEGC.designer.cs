@@ -61,6 +61,51 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        internal static string btnSrch {
+            get {
+                return ResourceManager.GetString("btnSrch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Canada.gc.ca.
+        /// </summary>
+        internal static string CDNLinkText {
+            get {
+                return ResourceManager.GetString("CDNLinkText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://www.canada.gc.ca/menu-eng.html.
+        /// </summary>
+        internal static string CDNLinkUrl {
+            get {
+                return ResourceManager.GetString("CDNLinkUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Departments.
+        /// </summary>
+        internal static string DeptText {
+            get {
+                return ResourceManager.GetString("DeptText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://www.canada.gc.ca/aboutgov-ausujetgouv/depts/menu-eng.html.
+        /// </summary>
+        internal static string DeptUrl {
+            get {
+                return ResourceManager.GetString("DeptUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Français.
         /// </summary>
         internal static string hlkLangSwitch {
@@ -102,6 +147,87 @@ namespace Resources {
         internal static string ltlGoCBarHead {
             get {
                 return ResourceManager.GetString("ltlGoCBarHead", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;ul class=&quot;mb-menu&quot; data-ajax-replace=&quot;/Includes/menu-eng.txt&quot;&gt;.
+        /// </summary>
+        internal static string MenuInclude {
+            get {
+                return ResourceManager.GetString("MenuInclude", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Services.
+        /// </summary>
+        internal static string ServiceText {
+            get {
+                return ResourceManager.GetString("ServiceText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://www.servicecanada.gc.ca/eng/home.shtml.
+        /// </summary>
+        internal static string ServiceUrl {
+            get {
+                return ResourceManager.GetString("ServiceUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;span&gt;Site &lt;/span&gt;menu.
+        /// </summary>
+        internal static string SiteMenuHeader {
+            get {
+                return ResourceManager.GetString("SiteMenuHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Web Experience Toolkit (WET).
+        /// </summary>
+        internal static string SiteName {
+            get {
+                return ResourceManager.GetString("SiteName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        internal static string SrchHead {
+            get {
+                return ResourceManager.GetString("SrchHead", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search website.
+        /// </summary>
+        internal static string Srchlbl {
+            get {
+                return ResourceManager.GetString("Srchlbl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;div id=&quot;gcwu-wmms-fip&quot; title=&quot;Symbol of the Government of Canada&quot;&gt;.
+        /// </summary>
+        internal static string wmmsDivTxt {
+            get {
+                return ResourceManager.GetString("wmmsDivTxt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Symbol of the Government of Canada.
+        /// </summary>
+        internal static string wmmsTxt {
+            get {
+                return ResourceManager.GetString("wmmsTxt", resourceCulture);
             }
         }
     }
