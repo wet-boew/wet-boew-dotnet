@@ -13,6 +13,10 @@ This feature adapts the WET core markup structure for use with .NET.
 <li>Uses WAI-ARIA to enhance accessibility</li>
 <li>Supports Firefox, Opera, Safari, Chrome, and IE 7+</li>
 </ul>
+<h3>Version</h3>
+<ul>
+<li>WET .Net Variant v1.0-a to be available January 25, 2013</li>
+</ul>
 <hr />
 Variante .NET
 ================
@@ -28,4 +32,8 @@ Cette composante permet d’adapter le structures de balises principales de la B
 <li>Recours aux WAI-ARIA pour accroître l’accessibilité</li>
 <li>Approche d'amélioration progressive</li>
 <li>Soutien pour Firefox, Opera, Safari, Chrome et IE 7+</li>
+</ul>
+<h3>Version</h3>
+<ul>
+<li>La version v1.0-a de la Variante .Net de la BOEW est prévue pour 25 janvier 2013</li>
 </ul>

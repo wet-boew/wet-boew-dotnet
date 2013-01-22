@@ -1,0 +1,184 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GCWU-1col.master.cs" Inherits="WET_BOEW_dotnet.App_Master.GCWU_1col" %>
+<%@ Register src="~/App_Master/ModificationDate.ascx" TagName="ucModDate" TagPrefix="uc1" %>
+<%@ Register src="~/App_Master/LangSwitcher.ascx" TagName="ucLang" TagPrefix="uc1" %>
+<!DOCTYPE html>
+<!--[if IE 7]><html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="no-js ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head runat="server">
+<meta charset="utf-8" />
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
+<title>Content page - GC Web Usability theme - Working examples - Web Experience Toolkit (WET)</title>
+
+<link rel="shortcut icon" href="~/theme/theme-gcwu-fegc/images/favicon.ico" />
+<meta name="description" content="English description / Description en anglais" />
+<meta name="dcterms.creator" content="English name of the content author / Nom en anglais de l'auteur du contenu" />
+<meta name="dcterms.title" content="English title / Titre en anglais" />
+<meta name="dcterms.issued" title="W3CDTF" content="Date published (YYYY-MM-DD) / Date de publication (AAAA-MM-JJ)" />
+<meta name="dcterms.modified" title="W3CDTF" content="Date modified (YYYY-MM-DD) / Date de modification (AAAA-MM-JJ)" />
+<meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" />
+<meta name="dcterms.language" title="ISO639-2" content="eng" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<script src="<%= ResolveUrl("~/theme/js/jquery.min.js") %>"></script>
+<!--[if lte IE 8]>
+<script src="<% = ResolveUrl("~/theme/js/polyfills/html5shiv-min.js") %>"></script>
+<link rel="stylesheet" href="~/theme/grids/css/util-ie-min.css" />
+<link rel="stylesheet" href="~/theme/js/css/pe-ap-ie-min.css" />
+<link rel="stylesheet" href="~/theme/theme-gcwu-fegc/css/theme-ie-min.css" />
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="~/theme/grids/css/util-min.css" />
+<link rel="stylesheet" href="~/theme/js/css/pe-ap-min.css" />
+<link rel="stylesheet" href="~/theme/theme-gcwu-fegc/css/theme-min.css" />
+<!--<![endif]-->
+<noscript><link rel="stylesheet" href="~/theme/theme-gcwu-fegc/css/theme-ns-min.css" /></noscript>
+
+<!-- CustomScriptsCSSStart -->
+<link rel="stylesheet" href="~/theme/dotnet/dotnet.css" />
+<!-- CustomScriptsCSSEnd -->
+</head>
+
+<body><div id="wb-body">
+<form id="MainForm" runat="server">
+<div id="wb-skip">
+<ul id="wb-tphp">
+<li id="wb-skip1">
+    <asp:HyperLink ID="hlSkipContent" runat="server" Text="<%$ Resources:GCWU_FEGC, hlSkipContent %>" NavigateUrl="#wb-cont" /></li>
+<li id="wb-skip2"><asp:HyperLink ID="hlSkipFooter" Text="<%$ Resources:GCWU_FEGC, hlSkipFooter %>" runat="server" NavigateUrl="#wb-nav" /></li>
+</ul>
+</div>
+
+<div id="wb-head"><div id="wb-head-in"><header>
+<!-- HeaderStart -->
+<nav role="navigation"><div id="gcwu-gcnb"><h2><asp:Literal ID="ltlGoCBarHead" runat="server"/></h2><div id="gcwu-gcnb-in"><div id="gcwu-gcnb-fip">
+<div id="gcwu-sig"><div id="gcwu-sig-in"><asp:Literal ID="ltlDivSig" Text="<%$ Resources:GCWU_FEGC, ltlDivSig %>" runat="server"/></div></div>
+<ul>
+<li id="gcwu-gcnb1"><asp:HyperLink ID="hlkCdnLink" rel="external" runat="server" text="<%$ Resources:GCWU_FEGC, CDNLinkText %>" NavigateUrl="<%$ Resources:GCWU_FEGC, CDNLinkUrl %>"/></li>
+<li id="gcwu-gcnb2"><asp:HyperLink ID="hlkServices" rel="external" text="<%$ Resources:GCWU_FEGC, ServiceText %>" NavigateUrl="<%$ Resources:GCWU_FEGC, ServiceUrl %>" runat="server" /></li>
+<li id="gcwu-gcnb3"><asp:HyperLink ID="HyperLink1" rel="external" text="<%$ Resources:GCWU_FEGC, DeptText %>" NavigateUrl="<%$ Resources:GCWU_FEGC, DeptUrl %>" runat="server" /></li>
+<li id="gcwu-gcnb-lang"><uc1:ucLang ID="ucLang" runat="server" /></li>
+</ul>
+</div></div></div></nav>
+
+<div id="gcwu-bnr" role="banner"><div id="gcwu-bnr-in">
+<div id="gcwu-wmms"><div id="gcwu-wmms-in"><asp:Literal ID="ltlwmmsdiv" Text="<%$ Resources:GCWU_FEGC, wmmsDivTxt %>" runat="server"/><asp:Image ID="imgWMMS" AlternateText="<%$ Resources:GCWU_FEGC, wmmsTxt %>" ImageUrl="/theme/theme-gcwu-fegc/images/wmms.gif" width="126" height="30" runat="server"/></div></div></div>
+<div id="gcwu-title"><p id="gcwu-title-in"><asp:HyperLink ID="hlkHome" Text="<%$ Resources:GCWU_FEGC, SiteName %>" NavigateUrl="/Content.aspx" runat="server"/></p></div>
+
+<section role="search"><div id="gcwu-srchbx"><h2><asp:Literal ID="ltlSrchHead" runat="server" Text="<%$ Resources:GCWU_FEGC, SrchHead %>"/></h2>
+<%--form action="#" method="post"--%><div id="gcwu-srchbx-in">
+<asp:Label ID="lblSearch" AssociatedControlID="gcwu_srch" runat="server" Text="<%$ Resources:GCWU_FEGC, Srchlbl %>"/>
+<asp:TextBox ID="gcwu_srch" runat="server" type="search" MaxLength="150"/>
+<asp:Button ID="gcwu_srch_submit" runat="server" data-icon="search" Text="<%$ Resources:GCWU_FEGC, btnSrch %>"/>
+</div><%--/form--%>
+</div></section>
+</div>
+    </div>
+
+<nav role="navigation">
+<div id="gcwu-psnb"><h2><asp:Literal ID="ltlMenuHeader" Text="<%$ Resources:GCWU_FEGC, SiteMenuHeader %>" runat="server"/></h2><div id="gcwu-psnb-in"><div class="wet-boew-menubar mb-mega"><div>
+<%--<ul class="mb-menu" data-ajax-replace="">--%>
+<asp:Literal ID="Literal1" runat="server" Text="<%$ Resources:GCWU_FEGC, MenuInclude %>"/>
+<li><div><a href="http://wet-boew.github.com/wet-boew/index-eng.html">WET project</a></div></li>
+<li><div><a href="section2/index-eng.html">Section 2</a></div></li>
+<li><div><a href="#">Section 3</a></div></li>
+<li><div><a href="#">Section 4</a></div></li>
+<li><div><a href="#">Section 5</a></div></li>
+<li><div><a href="#">Section 6</a></div></li>
+<li><div><a href="#">Section 7</a></div></li>
+</ul>
+</div></div></div></div>
+
+<div id="gcwu-bc"><h2>Breadcrumb trail</h2><div id="gcwu-bc-in">
+<ol>
+<li><a href="../../index-eng.html">Home</a></li>
+<li><a href="../index-eng.html">Working examples</a></li>
+<li><a href="index-eng.html">GC Web Usability theme</a></li>
+<li>Content page</li>
+</ol>
+</div></div>
+</nav>
+<!-- HeaderEnd -->
+</header></div></div>
+
+<div id="wb-core"><div id="wb-core-in" class="equalize">
+<div id="wb-main" role="main"><div id="wb-main-in">
+<!-- MainContentStart -->
+<h1 id="wb-cont"><asp:ContentPlaceHolder ID="cphPageHeader" runat="server" /></h1>
+<asp:ContentPlaceHolder ID="cphMainContent" runat="server" />
+<dl id="gcwu-date-mod" role="contentinfo">
+<dt>Date modified:</dt><dd><span><time><uc1:ucModDate 
+        ID="ucModDate1" runat="server" /></time></span>
+    </dd>
+</dl>
+<div class="clear"></div>
+<!-- MainContentEnd -->
+</div></div>
+</div></div>
+
+<div id="wb-foot"><div id="wb-foot-in"><footer><h2 id="wb-nav">Footer</h2>
+<!-- FooterStart -->
+<nav role="navigation"><div id="gcwu-sft"><h3>Site footer</h3><div id="gcwu-sft-in">
+<div id="gcwu-tctr">
+<ul>
+<li class="gcwu-tc"><a href="#" rel="license">Terms and conditions</a></li>
+<li class="gcwu-tr"><a href="#">Transparency</a></li>
+</ul>
+</div>
+<div class="clear"></div>
+<section><div class="span-2"><h4 class="gcwu-col-head"><a href="#">About us</a></h4>
+<ul>
+<li><a href="#">Our Mandate</a></li>
+<li><a href="#">The Minister</a></li>
+</ul>
+</div></section>
+<section><div class="span-2"><h4 class="gcwu-col-head"><a href="#">News</a></h4>
+<ul>
+<li><a href="#">News releases</a></li>
+<li><a href="#">Media advisories</a></li>
+<li><a href="#">Multimedia</a></li>
+</ul>
+</div></section>
+<section><div class="span-2"><h4 class="gcwu-col-head"><a href="#">Contact us</a></h4>
+<address>
+<ul>
+<li><a href="#">Phone numbers</a></li>
+<li><a href="#">Office locations</a></li>
+</ul>
+</address>
+</div></section>
+<section><div class="span-2"><h4 class="gcwu-col-head"><a href="#">Stay connected</a></h4>
+<ul>
+<li><a rel="external" href="#">YouTube</a></li>
+<li><a rel="external" href="#">Twitter</a></li>
+<li><a href="#">Feeds</a></li>
+</ul>
+</div></section>
+</div></div></nav>
+
+<nav role="navigation"><div id="gcwu-gcft"><h3>Government of Canada footer</h3><div id="gcwu-gcft-in"><div id="gcwu-gcft-fip">
+<ul>
+<li><a rel="external" href="http://healthycanadians.gc.ca/index-eng.php"><span>Health</span><br />healthycanadians.gc.ca</a></li>
+<li><a rel="external" href="http://www.voyage.gc.ca/index-eng.asp"><span>Travel</span><br />travel.gc.ca</a></li>
+<li><a rel="external" href="http://www.servicecanada.gc.ca/eng/home.shtml"><span>Service Canada</span><br />servicecanada.gc.ca</a></li>
+<li><a rel="external" href="http://www.jobbank.gc.ca/intro-eng.aspx"><span>Jobs</span><br />jobbank.gc.ca</a></li>
+<li><a rel="external" href="http://actionplan.gc.ca/en"><span>Economy</span><br />actionplan.gc.ca</a></li>
+<li id="gcwu-gcft-ca"><div><a rel="external" href="http://www.canada.gc.ca/menu-eng.html">Canada.gc.ca</a></div></li>
+</ul>
+</div></div></div></nav>
+<!-- FooterEnd -->
+</footer>
+</div></div>
+</form>
+</div>
+
+<!-- ScriptsStart -->
+<script src="<% = ResolveUrl("~/theme/theme-gcwu-fegc/js/theme-min.js")%>"></script>
+<script src="<% = ResolveUrl("~/theme/js/settings.js")%>"></script>
+<script src="<% = ResolveUrl("~/theme/js/pe-ap-min.js")%>"></script>
+<!-- ScriptsEnd -->
+</body>
+</html>

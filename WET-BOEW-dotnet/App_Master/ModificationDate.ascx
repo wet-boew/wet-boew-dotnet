@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ModificationDate.ascx.cs" Inherits="WET_BOEW_dotnet.App_Master.ModificationDate" %>
+<asp:Literal ID="ltlModDate" runat="server" Text="<%$ AppSettings: DateFormat %>"/>
