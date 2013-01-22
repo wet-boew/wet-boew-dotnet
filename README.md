@@ -13,6 +13,9 @@ This feature adapts the WET core markup structure for use with .NET.
 <li>Uses WAI-ARIA to enhance accessibility</li>
 <li>Supports Firefox, Opera, Safari, Chrome, and IE 7+</li>
 </ul>
+<h3>Version</h3>
+<ul><li>WET .Net Variant V. 1.0a for GCWU Theme and GCWU Intranet Theme Master pages available January 25th, 2013</li>
+</ul>
 <hr />
 Variante .NET
 ================
@@ -28,4 +31,7 @@ Cette composante permet d’adapter le structures de balises principales de la B
 <li>Recours aux WAI-ARIA pour accroître l’accessibilité</li>
 <li>Approche d'amélioration progressive</li>
 <li>Soutien pour Firefox, Opera, Safari, Chrome et IE 7+</li>
+</ul>
+<h3>Version</h3>
+<ul><li>v.1.0a de la Variante .Net de la BOEW pour les Thèmes FEGC et FEGC Intranet disponible le 25 janvier 2013</li>
 </ul>
