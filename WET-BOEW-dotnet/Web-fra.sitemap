@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="/index.aspx" title="Accueil"  description="">
+    <siteMapNode url="/demos.aspx" title="Exemples pratiques"  description="">
+      <siteMapNode url="/GCWU-FEGC.aspx" title="Thème de la facilité d'emploi Web GC"  description="">
+        <siteMapNode url="/content.aspx" title="Page de contenu"  description=""/>
+        <siteMapNode url="/cont-secnav2.aspx" title="Page de contenu +  menu secondaire 2"  description=""/>
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

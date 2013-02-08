@@ -174,4 +174,82 @@
   <data name="wmmsTxt" xml:space="preserve">
     <value>Symbol of the Government of Canada</value>
   </data>
+  <data name="BC" xml:space="preserve">
+    <value>Breadcrumb trail</value>
+  </data>
+  <data name="CanadagcTxt" xml:space="preserve">
+    <value>Canada.gc.ca</value>
+  </data>
+  <data name="CanadagcUrl" xml:space="preserve">
+    <value>http://www.canada.gc.ca/menu-eng.html</value>
+  </data>
+  <data name="EconomyTxt" xml:space="preserve">
+    <value>&lt;span&gt;Economy&lt;/span&gt;&lt;br /&gt;plandaction.gc.ca</value>
+  </data>
+  <data name="EconomyURL" xml:space="preserve">
+    <value>http://actionplan.gc.ca</value>
+  </data>
+  <data name="EmploieTxt" xml:space="preserve">
+    <value>&lt;span&gt;Service Canada&lt;/span&gt;&lt;br /&gt;servicecanada.gc.ca</value>
+  </data>
+  <data name="EmploieURL" xml:space="preserve">
+    <value>http://www.servicecanada.gc.ca/fra/accueil.shtml</value>
+  </data>
+  <data name="FooterTxt" xml:space="preserve">
+    <value>Footer</value>
+  </data>
+  <data name="HealthyCanTxt" xml:space="preserve">
+    <value>&lt;span&gt;Health&lt;/span&gt;&lt;br /&gt;healthycanadians.gc.ca</value>
+  </data>
+  <data name="HealthyCanURL" xml:space="preserve">
+    <value>http://healthycanadians.gc.ca/index-eng.php</value>
+  </data>
+  <data name="ServCanTxt" xml:space="preserve">
+    <value>&lt;span&gt;Service Canada&lt;/span&gt;&lt;br /&gt;servicecanada.gc.ca</value>
+  </data>
+  <data name="ServCanURL" xml:space="preserve">
+    <value>http://www.servicecanada.gc.ca/eng/home.shtml</value>
+  </data>
+  <data name="SitefooterTxt" xml:space="preserve">
+    <value>Site footer</value>
+  </data>
+  <data name="TCText" xml:space="preserve">
+    <value>Terms and conditions</value>
+  </data>
+  <data name="TransparencyTxt" xml:space="preserve">
+    <value>Transparency</value>
+  </data>
+  <data name="TravelTxt" xml:space="preserve">
+    <value>&lt;span&gt;Travel&lt;/span&gt;&lt;br /&gt;travel.gc.ca</value>
+  </data>
+  <data name="TravelURL" xml:space="preserve">
+    <value>http://travel.gc.ca/index-eng.asp</value>
+  </data>
+  <data name="LangMeta" xml:space="preserve">
+    <value>&lt;meta name='dcterms.language' title='ISO639-2' content='eng'&gt;</value>
+  </data>
+  <data name="SecondaryNav" xml:space="preserve">
+    <value>Secondary menu</value>
+  </data>
+  <data name="FooterHead" xml:space="preserve">
+    <value>Footer / &lt;span lang="fr"&gt;Pied de page&lt;/span&gt;</value>
+  </data>
+  <data name="GoCFootertxt" xml:space="preserve">
+    <value>Government of Canada footer</value>
+  </data>
+  <data name="LangSelecLinksHead" xml:space="preserve">
+    <value>Language selection links / &lt;span lang="fr"&gt;Liens de sélection de langue&lt;/span&gt;</value>
+  </data>
+  <data name="SplashSIG" xml:space="preserve">
+    <value>&lt;div id="gcwu-sig-eng" title="Government of Canada / Gouvernement du Canada"&gt;&lt;img src="/theme/theme-gcwu-fegc/images/sig-eng.gif" class="image-actual" width="214" height="20" alt="Government of Canada / Gouvernement du Canada" /&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="SplashSkipContent" xml:space="preserve">
+    <value>Skip to main content / &lt;span lang="fr"&gt;Passer au contenu principal&lt;/span&gt;</value>
+  </data>
+  <data name="SplashSkipFooter" xml:space="preserve">
+    <value>Skip to footer / &lt;span lang="fr"&gt;Passer au pied de page&lt;/span&gt;</value>
+  </data>
+  <data name="WMMSAlt" xml:space="preserve">
+    <value>Symbol of the Government of Canada / Symbole du gouvernement du Canada</value>
+  </data>
 </root>

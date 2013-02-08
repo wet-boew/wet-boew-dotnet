@@ -1,13 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WET-BOEW-dotnet", "WET-BOEW-dotnet\WET-BOEW-dotnet.csproj", "{2C534684-97AB-40AA-9828-818CA956BF3E}"
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 2
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://wet-boew.tfspreview.com/defaultcollection
+		SccTeamFoundationServer = https://wet-boew.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
 		SccProjectUniqueName1 = WET-BOEW-dotnet\\WET-BOEW-dotnet.csproj
 		SccProjectName1 = WET-BOEW-dotnet

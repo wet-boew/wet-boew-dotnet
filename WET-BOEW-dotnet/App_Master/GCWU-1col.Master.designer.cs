@@ -13,6 +13,15 @@ namespace WET_BOEW_dotnet.App_Master {
     public partial class GCWU_1col {
         
         /// <summary>
+        /// ltlLangMeta control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltlLangMeta;
+        
+        /// <summary>
         /// MainForm control.
         /// </summary>
         /// <remarks>
@@ -121,42 +130,6 @@ namespace WET_BOEW_dotnet.App_Master {
         protected global::System.Web.UI.WebControls.HyperLink hlkHome;
         
         /// <summary>
-        /// ltlSrchHead control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltlSrchHead;
-        
-        /// <summary>
-        /// lblSearch control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSearch;
-        
-        /// <summary>
-        /// gcwu_srch control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox gcwu_srch;
-        
-        /// <summary>
-        /// gcwu_srch_submit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button gcwu_srch_submit;
-        
-        /// <summary>
         /// ltlMenuHeader control.
         /// </summary>
         /// <remarks>
@@ -166,13 +139,13 @@ namespace WET_BOEW_dotnet.App_Master {
         protected global::System.Web.UI.WebControls.Literal ltlMenuHeader;
         
         /// <summary>
-        /// Literal1 control.
+        /// lblBC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal Literal1;
+        protected global::System.Web.UI.WebControls.Literal lblBC;
         
         /// <summary>
         /// cphPageHeader control.
@@ -200,5 +173,104 @@ namespace WET_BOEW_dotnet.App_Master {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::WET_BOEW_dotnet.App_Master.ModificationDate ucModDate1;
+        
+        /// <summary>
+        /// ltlFooter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltlFooter;
+        
+        /// <summary>
+        /// ltlSiteFooter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltlSiteFooter;
+        
+        /// <summary>
+        /// ltlTC control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltlTC;
+        
+        /// <summary>
+        /// ltlTransparency control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltlTransparency;
+        
+        /// <summary>
+        /// ltlGoCFooter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltlGoCFooter;
+        
+        /// <summary>
+        /// hlkHealth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlkHealth;
+        
+        /// <summary>
+        /// hlkTravel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlkTravel;
+        
+        /// <summary>
+        /// hlkServCan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlkServCan;
+        
+        /// <summary>
+        /// hlkEmpl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlkEmpl;
+        
+        /// <summary>
+        /// hlkEconomy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlkEconomy;
+        
+        /// <summary>
+        /// hlkCanGc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlkCanGc;
     }
 }
