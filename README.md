@@ -20,7 +20,7 @@ This feature adapts the WET core markup structure for use with .NET.
 Variante .NET
 ================
 
-Cette composante permet d’adapter le structures de balises principales de la BOEW pour utilisation avec .NET.
+Cette composante permet d’adapter les structures de balises principales de la BOEW pour utilisation avec .NET.
 <h3>Avantages</h3>
 <ul>
 <li>Aide à réduire les répétitions de contenu et de codes (tels que les titres et les dates).</li>
