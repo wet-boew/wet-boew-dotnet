@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Wet-Boew.Master" AutoEventWireup="true" CodeBehind="Splash.master.cs" Inherits="GCIntranetTheme.Splash" %>
+<asp:Content ID="ContentMetaData" ContentPlaceHolderID="MetaData" runat="server">
+</asp:Content>
+<asp:Content ID="ContentHeder" ContentPlaceHolderID="Header" runat="server">
+    <header role="banner" id="wb-bnr">
+    <div class="container">
+    <div class="row mrgn-tp-lg mrgn-bttm-lg">
+    <div class="col-md-8 col-md-offset-2">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderLogo" runat="server" />    
+    </div>
+    </div>
+    </div>
+    </header>
+</asp:Content>
+<asp:Content ID="ContentMain" ContentPlaceHolderID="Main" runat="server">
+    <main role="main" property="mainContentOfPage" class="container">
+    <div class="row mrgn-tp-lg">
+    <div class="col-md-12">
+    <h1 class="wb-inv">Language selection - Government of Canada Intranet theme - Web Experience Toolkit / <span lang="fr">Sélection de la langue - Thème du gouvernement du Canada pour les sites intranet - Boîte à outils de l’expérience Web</span></h1>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    </div>
+    </div>
+    </main>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="Footer" runat="server">
+</asp:Content>

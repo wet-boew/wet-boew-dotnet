@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="false" >
+  <siteMapNode url="~/partners/index-fr.aspx" title="Thème Canada.ca pour les sites partenaires" description="">
+    <siteMapNode url="test2a" title="Test2A" description="" />
+  </siteMapNode>
+</siteMap>

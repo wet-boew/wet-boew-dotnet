@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/SubSite/content-secmenu-fr.aspx" title="[FR] Content page - Secondary menu" description="">
+    <siteMapNode url="link2a" title="Test2A" description="" />
+    <siteMapNode url="link2b" title="Test2B" description="" />
+  </siteMapNode>
+</siteMap>

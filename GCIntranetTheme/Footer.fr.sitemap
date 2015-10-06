@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="false" >
+    <siteMapNode url="" title=""  description="">
+      <siteMapNode url="" title="Contactez-nous" description="">
+        <siteMapNode url="https://github.com/wet-boew/wet-boew/issues/new" title="Questions ou commentaires?" description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="À propos" description="">
+        <siteMapNode url="http://wet-boew.github.io/v4.0-ci/index-fr.html#apropos" title="À propos de la Boîte à outils de l’expérience Web" description="" />
+        <siteMapNode url="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp" title="À propos des normes Web" description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Nouvelles" description="">
+        <siteMapNode url="https://github.com/wet-boew/wet-boew/pulse" title="Activité du projet récente" description="" />
+        <siteMapNode url="https://github.com/wet-boew/wet-boew/graphs" title="Statistiques du projet" description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Restez branchés" description="">
+        <siteMapNode url="https://twitter.com/BoiteExpWeb" title="Twitter" description="" />
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Wet-Boew.Master" AutoEventWireup="true" CodeBehind="Splash.master.cs" Inherits="GCWebUsabilityTheme.MasterPages.Splash" %>
+<%@ MasterType virtualpath="~/MasterPages/Wet-Boew.Master" %>
+
+<asp:Content ID="ContentMetaData" ContentPlaceHolderID="MetaData" runat="server">
+</asp:Content>
+<asp:Content ID="ContentHeader" ContentPlaceHolderID="Header" runat="server">
+    <header role="banner">
+    <div id="wb-bnr" class="container">
+    <object id="gcwu-sig" type="image/svg+xml" tabindex="-1" role="img" data="<%=GetSignatureImage() %>" aria-label="<%=Localization.TemplateStrings.tmpl_gc_sig %>"></object>
+    </div>
+    </header>
+</asp:Content>
+<asp:Content ID="ContentMain" ContentPlaceHolderID="Main" runat="server">
+    <main role="main" property="mainContentOfPage" class="container">
+    <div class="col-md-12">
+    <h1 class="wb-inv"><asp:Literal ID="LiteralTitle" runat="server" /></h1>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    </div>
+    </main>
+</asp:Content>
+<asp:Content ID="ContentFooter" ContentPlaceHolderID="Footer" runat="server">
+    <footer role="contentinfo" class="container">
+    <object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="/wet-v4/dist/assets/wmms-alt.svg" aria-label="<%=Localization.TemplateStrings.tmpl_gc_wmms %>"></object>
+    </footer>
+</asp:Content>

@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="HyperLink2AResource1.Text" xml:space="preserve">
+    <value>Newsroom</value>
+  </data>
+  <data name="HyperLink2AResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink2BResource1.Text" xml:space="preserve">
+    <value>News releases</value>
+  </data>
+  <data name="HyperLink2BResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink2CResource1.Text" xml:space="preserve">
+    <value>Media advisories</value>
+  </data>
+  <data name="HyperLink2CResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink2DResource1.Text" xml:space="preserve">
+    <value>Speeches</value>
+  </data>
+  <data name="HyperLink2DResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink2EResource1.Text" xml:space="preserve">
+    <value>Statements</value>
+  </data>
+  <data name="HyperLink2EResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3AResource1.Text" xml:space="preserve">
+    <value>How government works</value>
+  </data>
+  <data name="HyperLink3AResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3BResource1.Text" xml:space="preserve">
+    <value>Departments &amp; agencies</value>
+  </data>
+  <data name="HyperLink3BResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3CResource1.Text" xml:space="preserve">
+    <value>Prime Minister</value>
+  </data>
+  <data name="HyperLink3CResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3DResource1.Text" xml:space="preserve">
+    <value>Ministers</value>
+  </data>
+  <data name="HyperLink3DResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3EResource1.Text" xml:space="preserve">
+    <value>Public service &amp; military</value>
+  </data>
+  <data name="HyperLink3EResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3FResource1.Text" xml:space="preserve">
+    <value>Policies, regulations &amp; laws</value>
+  </data>
+  <data name="HyperLink3FResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3GResource1.Text" xml:space="preserve">
+    <value>Libraries</value>
+  </data>
+  <data name="HyperLink3GResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3HResource1.Text" xml:space="preserve">
+    <value>Publications</value>
+  </data>
+  <data name="HyperLink3HResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3IResource1.Text" xml:space="preserve">
+    <value>Statistics &amp; data</value>
+  </data>
+  <data name="HyperLink3IResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3JResource1.Text" xml:space="preserve">
+    <value>About Canada.ca</value>
+  </data>
+  <data name="HyperLink3JResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink4AResource1.Text" xml:space="preserve">
+    <value>Government-wide reporting</value>
+  </data>
+  <data name="HyperLink4AResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink4BResource1.Text" xml:space="preserve">
+    <value>Open government</value>
+  </data>
+  <data name="HyperLink4BResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink4CResource1.Text" xml:space="preserve">
+    <value>Proactive disclosure</value>
+  </data>
+  <data name="HyperLink4CResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink4DResource1.Text" xml:space="preserve">
+    <value>Terms &amp; conditions</value>
+  </data>
+  <data name="HyperLink4DResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink4EResource1.Text" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="HyperLink4EResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkFeedbackResource1.Text" xml:space="preserve">
+    <value>&lt;img src="/wet-v4/dist/assets/feedback.png" alt="Feedback about this Web site"&gt;</value>
+  </data>
+  <data name="HyperLinkFeedbackResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkMobileResource1.Text" xml:space="preserve">
+    <value>&lt;img src="/wet-v4/dist/assets/mobile.png" alt="Mobile centre"&gt;</value>
+  </data>
+  <data name="HyperLinkMobileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkResource1.Text" xml:space="preserve">
+    <value>Top of Page &lt;span class="glyphicon glyphicon-chevron-up"&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="HyperLinkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkSocialResource1.Text" xml:space="preserve">
+    <value>&lt;img src="/wet-v4/dist/assets/social.png" alt="Social media"&gt;</value>
+  </data>
+  <data name="HyperLinkSocialResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localize2Resource1.Text" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="Localize3Resource1.Text" xml:space="preserve">
+    <value>Government</value>
+  </data>
+  <data name="Localize4Resource1.Text" xml:space="preserve">
+    <value>Transparency</value>
+  </data>
+  <data name="Localize5Resource1.Text" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="Localize6Resource1.Text" xml:space="preserve">
+    <value>Social media</value>
+  </data>
+  <data name="Localize7Resource1.Text" xml:space="preserve">
+    <value>Mobile centre</value>
+  </data>
+  <data name="LocalizeAboutResource1.Text" xml:space="preserve">
+    <value>About this site</value>
+  </data>
+  <data name="LocalizeWordMarkResource1.Text" xml:space="preserve">
+    <value>&lt;object type="image/svg+xml" tabindex="-1" role="img" data="/wet-v4/dist/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"&gt;&lt;/object&gt;</value>
+  </data>
+</root>

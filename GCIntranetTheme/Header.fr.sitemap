@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Menu des sujets">
+    <siteMapNode url="./index-fr.htm" title="Projet de la BOEW" />
+    <siteMapNode url="./docs/start-fr.html#implement" title="Mise en œuvre de la BOEW" />
+    <siteMapNode url="./docs/start-fr.html" title="Contribuer à la BOEW" />
+  </siteMapNode>
+</siteMap>

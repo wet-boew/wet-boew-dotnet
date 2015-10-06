@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Wet-Boew.Master" AutoEventWireup="true" CodeBehind="GCWeb-SectionMenu.master.cs" Inherits="GCWebTheme.MasterPages.GCWeb_SectionMenu" %>
+<%@ MasterType virtualpath="~/MasterPages/Wet-Boew.Master" %>
+
+<%@ Register Src="~/Controls/TopOfPage.ascx" TagPrefix="uc1" TagName="TopOfPage" %>
+<%@ Register Src="~/Controls/LanguageSelection.ascx" TagPrefix="uc1" TagName="LanguageSelection" %>
+<%@ Register Src="~/Controls/SearchAndMenus.ascx" TagPrefix="uc1" TagName="SearchAndMenus" %>
+<%@ Register Src="~/Controls/Search.ascx" TagPrefix="uc1" TagName="Search" %>
+<%@ Register Src="~/Controls/SiteMenu.ascx" TagPrefix="uc1" TagName="SiteMenu" %>
+<%@ Register Src="~/Controls/Breadcrumb.ascx" TagPrefix="uc1" TagName="Breadcrumb" %>
+<%@ Register Src="~/Controls/DateModified.ascx" TagPrefix="uc1" TagName="DateModified" %>
+<%@ Register Src="~/Controls/Aside.ascx" TagPrefix="uc1" TagName="Aside" %>
+<%@ Register Src="~/Controls/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+<%@ Register Src="~/Controls/SectionMenu.ascx" TagPrefix="uc1" TagName="SectionMenu" %>
+
+<asp:Content ID="ContentHead" ContentPlaceHolderID="Head" runat="server">
+<!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+<script>dataLayer1 = [];</script>
+<!-- End Google Tag Manager -->
+</asp:Content>
+
+<asp:Content ID="ContentTopOfPage" ContentPlaceHolderID="TopOfPage" runat="server">
+<!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+<noscript><iframe title="Google Tag Manager" src="//www.googletagmanager.com/ns.html?id=GTM-TLGQ9K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer1' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer1', 'GTM-TLGQ9K');</script>
+<!-- End Google Tag Manager -->
+<uc1:TopOfPage runat="server" id="TopOfPage" />
+</asp:Content>
+
+<asp:Content ID="ContentHeader" ContentPlaceHolderID="Header" runat="server">
+<header role="banner">
+<div id="wb-bnr" class="container">
+    <uc1:LanguageSelection runat="server" id="LanguageSelection" />
+<div class="row">
+<div class="brand col-xs-8 col-sm-9 col-md-6">
+<asp:HyperLink ID="Home" runat="server" NavigateUrl="http://www.canada.ca/en/index.html"><object type="image/svg+xml" tabindex="-1" data="/wet-v4/dist/assets/sig-blk-en.svg"></object><span class="wb-inv"> Government of Canada</span></asp:HyperLink>
+</div>
+    <uc1:SearchAndMenus runat="server" id="SearchAndMenus" />
+    <uc1:Search runat="server" id="Search" />
+</div>
+</div>
+    <uc1:SiteMenu runat="server" id="SiteMenu" />
+    <uc1:Breadcrumb runat="server" id="Breadcrumb" />
+</header>
+</asp:Content>
+
+<asp:Content ID="ContentMain" ContentPlaceHolderID="Main" runat="server">
+<div class="container">
+<div class="row">
+<main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">
+<h1 id="wb-cont" property="name"><%=Page.Title %></h1>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+<div class="row pagedetails">
+<div class="col-sm-5 col-xs-12 datemod">
+<uc1:DateModified runat="server" id="DateModified" />
+</div>
+<div class="clear visible-xs"></div>
+<div class="col-sm-4 col-xs-6">
+<asp:HyperLink ID="Feedback" runat="server" NavigateUrl="http://www.canada.ca/en/contact/feedback.html" CssClass="btn btn-default"><span class="glyphicon glyphicon-comment mrgn-rght-sm"></span>Feedback<span class="wb-inv"> about this web site</span></asp:HyperLink>
+</div>
+<div class="col-sm-3 col-xs-6 text-right">
+<div class="wb-share" data-wb-share='{"lnkClass": "btn btn-default"}'></div>
+</div>
+<div class="clear visible-xs"></div>
+</div>
+</main>
+    <uc1:SectionMenu runat="server" id="SectionMenu" />
+</div>
+</div>
+</asp:Content>
+
+<asp:Content ID="ContentFooter" ContentPlaceHolderID="Footer" runat="server">
+    <uc1:Aside runat="server" id="Aside" />
+    <uc1:Footer runat="server" id="Footer" />
+</asp:Content>

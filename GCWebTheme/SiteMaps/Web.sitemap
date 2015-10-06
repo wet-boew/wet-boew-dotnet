@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="false" >
+  <siteMapNode url="~/index-en.aspx" title="Home" description="">
+    <siteMapNode url="~/content-en.aspx" title="Content page" description="">
+      <siteMapNode url="~/video-en.aspx" title="Video example" description="">
+        <siteMapNode url="link1a" title="Test1A" description="" />
+        <siteMapNode url="link1b" title="Test1B" description="" />
+      </siteMapNode>
+      <siteMapNode siteMapFile="~/partners/Web.sitemap" />
+      <siteMapNode url="link2" title="Link 2" description="">
+        <siteMapNode url="link2a" title="Test2A" description="" />
+        <siteMapNode url="link2b" title="Test2B" description="" />
+      </siteMapNode>
+      <siteMapNode url="link3" title="Link 3" description="" />
+      <siteMapNode url="link4" title="Link 4" description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

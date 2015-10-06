@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Topics menu">
+    <siteMapNode url="./index-en.htm" title="WET project" />
+    <siteMapNode url="./docs/start-en.html#implement" title="Implement WET" />
+    <siteMapNode url="./docs/start-en.html" title="Contribute to WET" />
+  </siteMapNode>
+</siteMap>

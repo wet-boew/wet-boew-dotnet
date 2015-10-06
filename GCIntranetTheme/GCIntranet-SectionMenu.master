@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Wet-Boew.Master" AutoEventWireup="true" CodeBehind="GCIntranet-SectionMenu.master.cs" Inherits="GCIntranetTheme.GCIntranet_SecondaryMenu" %>
+<%@ MasterType virtualpath="~/Wet-Boew.Master" %>
+
+<%@ Register Src="~/Controls/TopOfPage.ascx" TagPrefix="uc1" TagName="TopOfPage" %>
+<%@ Register Src="~/Controls/LanguageSelection.ascx" TagPrefix="uc1" TagName="LanguageSelection" %>
+<%@ Register Src="~/Controls/SearchAndMenus.ascx" TagPrefix="uc1" TagName="SearchAndMenus" %>
+<%@ Register Src="~/Controls/Search.ascx" TagPrefix="uc1" TagName="Search" %>
+<%@ Register Src="~/Controls/SiteMenu.ascx" TagPrefix="uc1" TagName="SiteMenu" %>
+<%@ Register Src="~/Controls/Breadcrumb.ascx" TagPrefix="uc1" TagName="Breadcrumb" %>
+<%@ Register Src="~/Controls/DateModified.ascx" TagPrefix="uc1" TagName="DateModified" %>
+<%@ Register Src="~/Controls/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+<%@ Register Src="~/Controls/SectionMenu.ascx" TagPrefix="uc1" TagName="SectionMenu" %>
+<%@ Register Src="~/Controls/SubSite.ascx" TagPrefix="uc1" TagName="SubSite" %>
+
+<asp:Content ID="ContentTopOfPage" runat="server" ContentPlaceHolderID="TopOfPage">
+    <uc1:TopOfPage runat="server" id="TopOfPage" />
+</asp:Content>
+
+<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="Header">
+<header role="banner">
+<div id="wb-bnr">
+<div id="wb-bar">
+<div class="container">
+<div class="row">
+<asp:Localize runat="server" meta:resourcekey="gcwu_sigResource1" Text="&lt;object id=&quot;gcwu-sig&quot; type=&quot;image/svg+xml&quot; tabindex=&quot;-1&quot; role=&quot;img&quot; data=&quot;./wet-v4/dist/assets/sig-blk-en.svg&quot; aria-label=&quot;Government of Canada&quot;&gt;&lt;/object&gt;"></asp:Localize>
+    <uc1:LanguageSelection runat="server" id="LanguageSelection" />
+    <uc1:SearchAndMenus runat="server" id="SearchAndMenus" />
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div id="wb-sttl" class="col-md-12">
+<asp:HyperLink ID="HyperLinkSiteTitle" runat="server" NavigateUrl="http://wet-boew.github.io/v4.0-ci/index-en.html">
+<span>Web Experience Toolkit</span>
+</asp:HyperLink>
+<asp:Localize runat="server" meta:resourcekey="wmmsResource1" Text="&lt;object id=&quot;wmms&quot; type=&quot;image/svg+xml&quot; tabindex=&quot;-1&quot; role=&quot;img&quot; data=&quot;./wet-v4/dist/assets/wmms-intra.svg&quot; aria-label=&quot;Symbol of the Government of Canada&quot;&gt;&lt;/object&gt;"></asp:Localize>
+</div>
+    <uc1:Search runat="server" id="Search" />
+</div>
+</div>
+</div>
+    <uc1:SubSite runat="server" ID="SubSite" Visible="false" />
+    <uc1:SiteMenu runat="server" id="SiteMenu" />
+    <uc1:Breadcrumb runat="server" id="Breadcrumb" />
+</header>
+</asp:Content>
+
+<asp:Content ID="ContentMain" runat="server" ContentPlaceHolderID="Main">
+<div class="container">
+<div class="row">
+<main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">
+<h1 id="wb-cont" property="name"><%=Page.Title %></h1>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    <uc1:DateModified runat="server" id="DateModified" />
+</main>
+    <uc1:SectionMenu runat="server" id="SectionMenu" />
+</div>
+</div>
+</asp:Content>
+
+<asp:Content ID="ContentFooter" runat="server" ContentPlaceHolderID="Footer">
+    <uc1:Footer runat="server" id="Footer" />
+</asp:Content>

@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Wet-Boew.Master" AutoEventWireup="true" CodeBehind="Splash.master.cs" Inherits="GCIntranetTheme.MasterPages.Splash" %>
+<%@ MasterType virtualpath="~/MasterPages/Wet-Boew.Master" %>
+
+<asp:Content ID="ContentMetaData" ContentPlaceHolderID="MetaData" runat="server">
+</asp:Content>
+<asp:Content ID="ContentHeader" ContentPlaceHolderID="Header" runat="server">
+    <header role="banner" id="wb-bnr">
+    <div class="container">
+    <div class="row mrgn-tp-lg mrgn-bttm-lg">
+    <div class="col-md-8 col-md-offset-2">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderLogo" runat="server" />    
+    </div>
+    </div>
+    </div>
+    </header>
+</asp:Content>
+<asp:Content ID="ContentMain" ContentPlaceHolderID="Main" runat="server">
+    <main role="main" property="mainContentOfPage" class="container">
+    <div class="row mrgn-tp-lg">
+    <div class="col-md-12">
+    <h1 class="wb-inv"><asp:Literal ID="LiteralTitle" runat="server" /></h1>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    </div>
+    </div>
+    </main>
+</asp:Content>
+<asp:Content ID="ContentFooter" ContentPlaceHolderID="Footer" runat="server">
+</asp:Content>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="false">
+  <siteMapNode url="" title="Pied de page du gouvernement du Canada"  description="">
+    <siteMapNode url="http://canadiensensante.gc.ca/" title="Santé"  description="" />
+    <siteMapNode url="http://voyage.gc.ca/" title="Voyage"  description="" />
+    <siteMapNode url="http://www.servicecanada.gc.ca/fra/accueil.shtml" title="Service Canada"  description="" />
+    <siteMapNode url="http://www.guichetemplois.gc.ca/" title="Emplois"  description="" />
+    <siteMapNode url="http://plandaction.gc.ca/fr" title="Économie"  description="" />
+  </siteMapNode>
+</siteMap>

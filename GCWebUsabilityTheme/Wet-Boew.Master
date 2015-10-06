@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Wet-Boew.Master.cs" Inherits="GCWebUsability.Wet_Boew" %>
+
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head runat="server">
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Base theme - Themes - Documentation - Web Experience Toolkit</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="<%=Page.MetaDescription %>">
+<asp:ContentPlaceHolder ID="MetaData" runat="server" />
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../../../theme-base/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../../theme-base/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="../../../theme-base/assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="../../../theme-base/css/ie8-theme.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../../../wet-boew/js/ie8-wet-boew.min.js"></script>
+<![endif]-->
+<noscript><link rel="stylesheet" href="../../../wet-boew/css/noscript.min.css" /></noscript>
+<asp:ContentPlaceHolder ID="Head" runat="server" />
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<asp:ContentPlaceHolder ID="TopOfPage" runat="server" />
+<asp:ContentPlaceHolder ID="Header" runat="server" />
+<asp:ContentPlaceHolder ID="Main" runat="server" />
+<asp:ContentPlaceHolder ID="Footer" runat="server" />
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="../../../wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="../../../wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+<![endif]-->
+</body>
+</html>
