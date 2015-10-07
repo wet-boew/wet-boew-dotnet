@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCIntranetTheme", "GCIntranetTheme\GCIntranetTheme.csproj", "{D76FE7E6-12B0-4BBC-A868-EA3E377EE12D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCWebUsabilityTheme", "GCWebUsabilityTheme\GCWebUsabilityTheme.csproj", "{0CEC89CA-A421-4169-9A21-831348466077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCWebTheme", "GCWebTheme\GCWebTheme.csproj", "{9C7F68D7-1E16-4905-BD14-70E688929FB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D0F8DE9B-E3C8-42CC-B93E-07152A1F44F2}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		WETWebForm.zip = WETWebForm.zip
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localization", "Localization\Localization.csproj", "{C96A2F65-EA3C-49BB-AEF6-E62FD770C186}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://njes1s6201:8080/tfs/eisu
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GCIntranetTheme\\GCIntranetTheme.csproj
+		SccProjectName1 = GCIntranetTheme
+		SccLocalPath1 = GCIntranetTheme
+		SccProjectUniqueName2 = GCWebTheme\\GCWebTheme.csproj
+		SccProjectName2 = GCWebTheme
+		SccLocalPath2 = GCWebTheme
+		SccProjectUniqueName3 = GCWebUsabilityTheme\\GCWebUsabilityTheme.csproj
+		SccProjectName3 = GCWebUsabilityTheme
+		SccLocalPath3 = GCWebUsabilityTheme
+		SccProjectUniqueName4 = Localization\\Localization.csproj
+		SccProjectName4 = Localization
+		SccLocalPath4 = Localization
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D76FE7E6-12B0-4BBC-A868-EA3E377EE12D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D76FE7E6-12B0-4BBC-A868-EA3E377EE12D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D76FE7E6-12B0-4BBC-A868-EA3E377EE12D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D76FE7E6-12B0-4BBC-A868-EA3E377EE12D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CEC89CA-A421-4169-9A21-831348466077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CEC89CA-A421-4169-9A21-831348466077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CEC89CA-A421-4169-9A21-831348466077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CEC89CA-A421-4169-9A21-831348466077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7F68D7-1E16-4905-BD14-70E688929FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7F68D7-1E16-4905-BD14-70E688929FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7F68D7-1E16-4905-BD14-70E688929FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7F68D7-1E16-4905-BD14-70E688929FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C96A2F65-EA3C-49BB-AEF6-E62FD770C186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96A2F65-EA3C-49BB-AEF6-E62FD770C186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96A2F65-EA3C-49BB-AEF6-E62FD770C186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96A2F65-EA3C-49BB-AEF6-E62FD770C186}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

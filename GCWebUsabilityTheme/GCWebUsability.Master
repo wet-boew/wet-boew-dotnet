@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GCWebUsability.master.cs" Inherits="GCWebUsability.GCWebUsability" MasterPageFile="~/WET-BOEW.Master" %>
+
+<%@ Register Src="~/Controls/TopOfPage.ascx" TagPrefix="uc1" TagName="TopOfPage" %>
+<%@ Register Src="~/Controls/LanguageSelectionGCWebUsability.ascx" TagPrefix="uc1" TagName="LanguageSelectionGCWebUsability" %>
+<%@ Register Src="~/Controls/SearchAndMenus.ascx" TagPrefix="uc1" TagName="SearchAndMenus" %>
+<%@ Register Src="~/Controls/Search-GCWebUsability.ascx" TagPrefix="uc1" TagName="SearchGCWebUsability" %>
+<%@ Register Src="~/Controls/SiteMenu.ascx" TagPrefix="uc1" TagName="SiteMenu" %>
+<%@ Register Src="~/Controls/Breadcrumb.ascx" TagPrefix="uc1" TagName="Breadcrumb" %>
+<%@ Register Src="~/Controls/DateModified.ascx" TagPrefix="uc1" TagName="DateModified" %>
+<%@ Register Src="~/Controls/Footer-GCWebUsability.ascx" TagPrefix="uc1" TagName="FooterGCWebUsability" %>
+
+<asp:Content ID="ContentMetaData" runat="server" ContentPlaceHolderID="MetaData">
+<meta name="dcterms.title" content="Content page - Web Experience Toolkit">
+<meta name="dcterms.creator" content="French name of the content author / Nom en français de l'auteur du contenu">
+<meta name="dcterms.issued" title="W3CDTF" content="Date published (YYYY-MM-DD) / Date de publication (AAAA-MM-JJ)">
+<meta name="dcterms.modified" title="W3CDTF" content="Date modified (YYYY-MM-DD) / Date de modification (AAAA-MM-JJ)">
+<meta name="dcterms.subject" title="scheme" content="French subject terms / Termes de sujet en français">
+<meta name="dcterms.language" title="ISO639-2" content="eng">
+</asp:Content>
+
+<asp:Content ID="ContentTopOfPage" runat="server" ContentPlaceHolderID="TopOfPage">
+    <uc1:TopOfPage runat="server" id="TopOfPage" />
+</asp:Content>
+
+<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="Header">
+<header role="banner">
+<div id="wb-bnr">
+<div id="wb-bar">
+<div class="container">
+<div class="row">
+<object id="gcwu-sig" type="image/svg+xml" tabindex="-1" role="img" data="./theme-gcwu-fegc/assets/sig-en.svg" aria-label="Government of Canada"></object>
+    <uc1:LanguageSelectionGCWebUsability runat="server" id="LanguageSelectionGCWebUsability" />
+    <uc1:SearchAndMenus runat="server" ID="SearchAndMenus" />
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div id="wb-sttl" class="col-md-5">
+<a href="http://wet-boew.github.io/v4.0-ci/index-en.html">
+<span>Web Experience Toolkit</span>
+</a>
+</div>
+<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="./theme-gcwu-fegc/assets/wmms.svg" aria-label="Symbol of the Government of Canada"></object>
+    <uc1:SearchGCWebUsability runat="server" id="SearchGCWebUsability" />
+</div>
+</div>
+</div>
+    <uc1:SiteMenu runat="server" id="SiteMenu" />
+    <uc1:Breadcrumb runat="server" id="Breadcrumb" />
+</header>
+</asp:Content>
+
+<asp:Content ID="ContentMain" runat="server" ContentPlaceHolderID="Main">
+<main role="main" property="mainContentOfPage" class="container">
+<h1 id="wb-cont" property="name"><%=Page.Title %></h1>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+<asp:ContentPlaceHolder ID="PageDetails" runat="server" />
+</main>
+</asp:Content>
+
+<asp:Content ID="ContentPageDetails" runat="server" ContentPlaceHolderID="PageDetails">
+    <uc1:DateModified runat="server" id="DateModified" />
+</asp:Content>
+
+<asp:Content ID="ContentFooter" runat="server" ContentPlaceHolderID="Footer">
+    <uc1:FooterGCWebUsability runat="server" id="FooterGCWebUsability" />
+</asp:Content>
+

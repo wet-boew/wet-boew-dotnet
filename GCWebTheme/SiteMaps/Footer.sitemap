@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="false" >
+  <!--Only the "Contact information" section is configurable.  The rest are standardized.-->
+    <siteMapNode url="" title="Contact information">
+      <siteMapNode url="#1" title="Link 1" />
+      <siteMapNode url="#2" title="Link 2" />
+      <siteMapNode url="#3" title="Link 3" />
+    </siteMapNode>
+</siteMap>

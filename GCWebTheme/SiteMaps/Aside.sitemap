@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="false">
+  <siteMapNode url="" title="Government of Canada activities and initiatives">
+    <siteMapNode url="#1" title="[Activities and initiatives hyperlink text1]"  description="Brief description of the initiative, task or information being promoted1." imageUrl="/wet-v4/dist/img/features/355x113.png" />
+    <siteMapNode url="#2" title="[Activities and initiatives hyperlink text2]"  description="Brief description of the initiative, task or information being promoted2." imageUrl="/wet-v4/dist/img/features/355x113.png" />
+    <siteMapNode url="#3" title="[Activities and initiatives hyperlink text3]"  description="Brief description of the initiative, task or information being promoted3." imageUrl="/wet-v4/dist/img/features/355x113.png" />
+  </siteMapNode>
+</siteMap>

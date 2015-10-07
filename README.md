@@ -14,7 +14,7 @@ This feature adapts the WET core markup structure for use with .NET.
 <li>Supports Firefox, Opera, Safari, Chrome, and IE 7+</li>
 </ul>
 <h3>Version</h3>
-<ul><li>WET .Net Variant V. 2.0a for GCWU Theme and GCWU Intranet Theme Master pages available soon</li>
+<ul><li>WET4 for Canada.ca, Government of Canada Web Usability, and Government of Canada Intranet themes.</li>
 </ul>
 <hr />
 Variante .NET
@@ -33,5 +33,5 @@ Cette composante permet d’adapter les structures de balises principales de la 
 <li>Soutien pour Firefox, Opera, Safari, Chrome et IE 7+</li>
 </ul>
 <h3>Version</h3>
-<ul><li>v.2.0a de la Variante .Net de la BOEW pour les Thèmes FEGC et FEGC Intranet disponible bientôt</li>
+<ul><li>v4 de la BOEW pour le Thème Canada.ca, Thème de la facilité d’emploi Web du gouvernement du Canada, et Thème du gouvernement du Canada pour les sites intranet.</li>
 </ul>

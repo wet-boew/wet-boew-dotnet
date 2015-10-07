@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Topics menu">
+    <siteMapNode url="http://www.esdc.gc.ca/en/jobs/index.page" title="Jobs" />
+    <siteMapNode url="http://www.cic.gc.ca/english/index.asp" title="Immigration" />
+    <siteMapNode url="http://travel.gc.ca" title="Travel" />
+    <siteMapNode url="http://www.canada.ca/en/services/business/index.html" title="Business" />
+    <siteMapNode url="http://www.canada.ca/en/services/benefits/index.html" title="Benefits" />
+    <siteMapNode url="http://healthycanadians.gc.ca/index-eng.php" title="Health" />
+    <siteMapNode url="http://www.canada.ca/en/services/taxes/index.html" title="Taxes" />
+    <siteMapNode url="http://www.canada.ca/en/services/index.html" title="More services" />
+  </siteMapNode>
+</siteMap>

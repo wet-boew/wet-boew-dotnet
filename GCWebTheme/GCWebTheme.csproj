@@ -1,0 +1,1889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C7F68D7-1E16-4905-BD14-70E688929FB1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GCWebTheme</RootNamespace>
+    <AssemblyName>GCWebTheme</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content-en.aspx" />
+    <Content Include="content-fr.aspx" />
+    <Content Include="Controls\Aside.ascx" />
+    <Content Include="Controls\Breadcrumb.ascx" />
+    <Content Include="Controls\DateModified.ascx" />
+    <Content Include="Controls\Footer.ascx" />
+    <Content Include="Controls\LanguageSelection.ascx" />
+    <Content Include="Controls\Search.ascx" />
+    <Content Include="Controls\SearchAndMenus.ascx" />
+    <Content Include="Controls\SectionMenu.ascx" />
+    <Content Include="Controls\SiteMenu.ascx" />
+    <Content Include="Controls\TopOfPage.ascx" />
+    <Content Include="default.aspx" />
+    <Content Include="partners\index-en.aspx" />
+    <Content Include="partners\index-fr.aspx" />
+    <Content Include="video-en.aspx" />
+    <Content Include="video-fr.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="wet-v4\dist\404-en-fr.html" />
+    <Content Include="wet-v4\dist\404-en.html" />
+    <Content Include="wet-v4\dist\404-fr-en.html" />
+    <Content Include="wet-v4\dist\404-fr.html" />
+    <Content Include="wet-v4\dist\404.html" />
+    <Content Include="wet-v4\dist\act-en.html" />
+    <Content Include="wet-v4\dist\act-fr.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-af.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-ar.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-bg.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-cs.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-de.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-el.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-en.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-es.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-et.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-fr.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-hi.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-hu.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-hy.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-id.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-is.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-it.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-ja.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-ko.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-lt.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-lv.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-nl.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-pl.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-pt-BR.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-pt.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-ru.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-sk.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-sq.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-th.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-tr.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-uk.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-vi.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-zh-Hans.html" />
+    <Content Include="wet-v4\dist\ajax\mobmenu-zh.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-af.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-ar.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-bg.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-cs.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-de.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-el.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-en.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-es.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-et.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-fr.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-hi.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-hu.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-hy.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-id.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-is.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-it.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-ja.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-ko.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-lt.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-lv.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-nl.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-pl.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-pt-BR.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-pt.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-ru.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-sk.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-sq.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-th.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-tr.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-uk.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-vi.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-zh-Hans.html" />
+    <Content Include="wet-v4\dist\ajax\sitemenu-zh.html" />
+    <Content Include="wet-v4\dist\assets\backdrop.png" />
+    <Content Include="wet-v4\dist\assets\cloud-popup-relative.png" />
+    <Content Include="wet-v4\dist\assets\favicon-mobile.png" />
+    <Content Include="wet-v4\dist\assets\favicon.ico" />
+    <Content Include="wet-v4\dist\assets\fd-slider-sprite.png" />
+    <Content Include="wet-v4\dist\assets\feedback.png" />
+    <Content Include="wet-v4\dist\assets\loading.png" />
+    <Content Include="wet-v4\dist\assets\mediacontrols.html" />
+    <Content Include="wet-v4\dist\assets\mobile.png" />
+    <Content Include="wet-v4\dist\assets\multimedia.swf" />
+    <Content Include="wet-v4\dist\assets\sig-blk-en.png" />
+    <Content Include="wet-v4\dist\assets\sig-blk-en.svg" />
+    <Content Include="wet-v4\dist\assets\sig-blk-fr.png" />
+    <Content Include="wet-v4\dist\assets\sig-blk-fr.svg" />
+    <Content Include="wet-v4\dist\assets\sig-en.png" />
+    <Content Include="wet-v4\dist\assets\sig-en.svg" />
+    <Content Include="wet-v4\dist\assets\sig-fr.png" />
+    <Content Include="wet-v4\dist\assets\sig-fr.svg" />
+    <Content Include="wet-v4\dist\assets\sig-spl.png" />
+    <Content Include="wet-v4\dist\assets\sig-spl.svg" />
+    <Content Include="wet-v4\dist\assets\social.png" />
+    <Content Include="wet-v4\dist\assets\sprites_geomap.png" />
+    <Content Include="wet-v4\dist\assets\sprites_share.png" />
+    <Content Include="wet-v4\dist\assets\tuwyt.jpg" />
+    <Content Include="wet-v4\dist\assets\wmms-alt.png" />
+    <Content Include="wet-v4\dist\assets\wmms-blk.png" />
+    <Content Include="wet-v4\dist\assets\wmms-blk.svg" />
+    <Content Include="wet-v4\dist\assets\wmms-spl.png" />
+    <Content Include="wet-v4\dist\assets\wmms-spl.svg" />
+    <Content Include="wet-v4\dist\assets\wmms.png" />
+    <Content Include="wet-v4\dist\assets\wmms.svg" />
+    <Content Include="wet-v4\dist\assets\zoom-minus-mini.png" />
+    <Content Include="wet-v4\dist\assets\zoom-plus-mini.png" />
+    <Content Include="wet-v4\dist\assets\zoom-world-mini.png" />
+    <Content Include="wet-v4\dist\blog-en.html" />
+    <Content Include="wet-v4\dist\blog-fr.html" />
+    <Content Include="wet-v4\dist\campaign-en.html" />
+    <Content Include="wet-v4\dist\campaign-fr.html" />
+    <Content Include="wet-v4\dist\content-en.html" />
+    <Content Include="wet-v4\dist\content-fr.html" />
+    <Content Include="wet-v4\dist\css\ie8-wet-boew.min.css" />
+    <Content Include="wet-v4\dist\css\messages-ie.min.css" />
+    <Content Include="wet-v4\dist\css\messages.min.css" />
+    <Content Include="wet-v4\dist\css\mobile-centre-ie.min.css" />
+    <Content Include="wet-v4\dist\css\mobile-centre.min.css" />
+    <Content Include="wet-v4\dist\css\noscript.min.css" />
+    <Content Include="wet-v4\dist\css\polyfills\datalist.min.css" />
+    <Content Include="wet-v4\dist\css\polyfills\datepicker.min.css" />
+    <Content Include="wet-v4\dist\css\polyfills\details.min.css" />
+    <Content Include="wet-v4\dist\css\polyfills\meter.min.css" />
+    <Content Include="wet-v4\dist\css\polyfills\progress.min.css" />
+    <Content Include="wet-v4\dist\css\polyfills\slider.min.css" />
+    <Content Include="wet-v4\dist\css\social-media-centre-ie.min.css" />
+    <Content Include="wet-v4\dist\css\social-media-centre.min.css" />
+    <Content Include="wet-v4\dist\css\theme-srv.min.css" />
+    <Content Include="wet-v4\dist\css\theme.min.css" />
+    <Content Include="wet-v4\dist\css\wet-boew.min.css" />
+    <Content Include="wet-v4\dist\demos\arb-rra\arb-rra-en.html" />
+    <Content Include="wet-v4\dist\demos\arb-rra\arb-rra-fr.html" />
+    <Content Include="wet-v4\dist\demos\arb-rra\arb-rra-planAccess-en.html" />
+    <Content Include="wet-v4\dist\demos\arb-rra\arb-rra-planAccess-fr.html" />
+    <Content Include="wet-v4\dist\demos\arb-rra\arb-rra-terms-en.html" />
+    <Content Include="wet-v4\dist\demos\arb-rra\arb-rra-terms-fr.html" />
+    <Content Include="wet-v4\dist\demos\arb-rra\demo\arb-rra.min.css" />
+    <Content Include="wet-v4\dist\demos\archived\archived-en.html" />
+    <Content Include="wet-v4\dist\demos\archived\archived-fr.html" />
+    <Content Include="wet-v4\dist\demos\archived\demo\archived.min.css" />
+    <Content Include="wet-v4\dist\demos\cal-events\cal-events-en.html" />
+    <Content Include="wet-v4\dist\demos\cal-events\cal-events-fr.html" />
+    <Content Include="wet-v4\dist\demos\charts\charts-en.html" />
+    <Content Include="wet-v4\dist\demos\charts\charts-fr.html" />
+    <Content Include="wet-v4\dist\demos\charts\custom-en.html" />
+    <Content Include="wet-v4\dist\demos\charts\custom-fr.html" />
+    <Content Include="wet-v4\dist\demos\charts\labelsandreferencevalue-en.html" />
+    <Content Include="wet-v4\dist\demos\charts\labelsandreferencevalue-fr.html" />
+    <Content Include="wet-v4\dist\demos\charts\piecustom-en.html" />
+    <Content Include="wet-v4\dist\demos\charts\piecustom-fr.html" />
+    <Content Include="wet-v4\dist\demos\charts\testing-en.html" />
+    <Content Include="wet-v4\dist\demos\charts\testing-fr.html" />
+    <Content Include="wet-v4\dist\demos\collapsible-alerts\collapsible-alerts-en.html" />
+    <Content Include="wet-v4\dist\demos\collapsible-alerts\collapsible-alerts-fr.html" />
+    <Content Include="wet-v4\dist\demos\country-content\country-content-en.html" />
+    <Content Include="wet-v4\dist\demos\country-content\country-content-fr.html" />
+    <Content Include="wet-v4\dist\demos\data-ajax\data-ajax-en.html" />
+    <Content Include="wet-v4\dist\demos\data-ajax\data-ajax-fr.html" />
+    <Content Include="wet-v4\dist\demos\data-ajax\demo\data-ajax.min.css" />
+    <Content Include="wet-v4\dist\demos\data-inview\data-inview-en.html" />
+    <Content Include="wet-v4\dist\demos\data-inview\data-inview-fr.html" />
+    <Content Include="wet-v4\dist\demos\data-inview\demo\data-inview.min.css" />
+    <Content Include="wet-v4\dist\demos\data-inview\demo\data-inview.min.js" />
+    <Content Include="wet-v4\dist\demos\data-picture\data-picture-en.html" />
+    <Content Include="wet-v4\dist\demos\data-picture\data-picture-fr.html" />
+    <Content Include="wet-v4\dist\demos\datalist\datalist-dynamic-en.html" />
+    <Content Include="wet-v4\dist\demos\datalist\datalist-dynamic-fr.html" />
+    <Content Include="wet-v4\dist\demos\datalist\datalist-en.html" />
+    <Content Include="wet-v4\dist\demos\datalist\datalist-fr.html" />
+    <Content Include="wet-v4\dist\demos\datalist\demo\datalist_dynamic.min.js" />
+    <Content Include="wet-v4\dist\demos\datepicker\datepicker-en.html" />
+    <Content Include="wet-v4\dist\demos\datepicker\datepicker-fr.html" />
+    <Content Include="wet-v4\dist\demos\details\details-en.html" />
+    <Content Include="wet-v4\dist\demos\details\details-fr.html" />
+    <Content Include="wet-v4\dist\demos\dismissable-content\dismissable-content-en.html" />
+    <Content Include="wet-v4\dist\demos\dismissable-content\dismissable-content-fr.html" />
+    <Content Include="wet-v4\dist\demos\equalheight\demo\equalheight.min.css" />
+    <Content Include="wet-v4\dist\demos\equalheight\equalheight-en.html" />
+    <Content Include="wet-v4\dist\demos\equalheight\equalheight-fr.html" />
+    <Content Include="wet-v4\dist\demos\favicon\favicon-en.html" />
+    <Content Include="wet-v4\dist\demos\favicon\favicon-fr.html" />
+    <Content Include="wet-v4\dist\demos\feedback\demo\feedback.min.css" />
+    <Content Include="wet-v4\dist\demos\feedback\demo\feedback.min.js" />
+    <Content Include="wet-v4\dist\demos\feedback\feedback-en.html" />
+    <Content Include="wet-v4\dist\demos\feedback\feedback-fr.html" />
+    <Content Include="wet-v4\dist\demos\feeds\demo\feeds.min.css" />
+    <Content Include="wet-v4\dist\demos\feeds\feeds-en.html" />
+    <Content Include="wet-v4\dist\demos\feeds\feeds-fr.html" />
+    <Content Include="wet-v4\dist\demos\footnotes\footnotes-en.html" />
+    <Content Include="wet-v4\dist\demos\footnotes\footnotes-fr.html" />
+    <Content Include="wet-v4\dist\demos\formvalid\formvalid-en.html" />
+    <Content Include="wet-v4\dist\demos\formvalid\formvalid-fr.html" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\client_functions.min.js" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\config-en.min.js" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\config-esri-en.min.js" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\config-esri-fr.min.js" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\config-fr.min.js" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\configwms-en.min.js" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\configwms-fr.min.js" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\trafficcamera.png" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\trafficcamera_active.png" />
+    <Content Include="wet-v4\dist\demos\geomap\geomap-en.html" />
+    <Content Include="wet-v4\dist\demos\geomap\geomap-fr.html" />
+    <Content Include="wet-v4\dist\demos\index-en.html" />
+    <Content Include="wet-v4\dist\demos\index-fr.html" />
+    <Content Include="wet-v4\dist\demos\lightbox\demo\1_b.jpg" />
+    <Content Include="wet-v4\dist\demos\lightbox\demo\1_s.jpg" />
+    <Content Include="wet-v4\dist\demos\lightbox\demo\2_b.jpg" />
+    <Content Include="wet-v4\dist\demos\lightbox\demo\2_s.jpg" />
+    <Content Include="wet-v4\dist\demos\lightbox\demo\3_b.jpg" />
+    <Content Include="wet-v4\dist\demos\lightbox\demo\3_s.jpg" />
+    <Content Include="wet-v4\dist\demos\lightbox\demo\4_b.jpg" />
+    <Content Include="wet-v4\dist\demos\lightbox\demo\4_s.jpg" />
+    <Content Include="wet-v4\dist\demos\lightbox\demo\5_b.jpg" />
+    <Content Include="wet-v4\dist\demos\lightbox\demo\5_s.jpg" />
+    <Content Include="wet-v4\dist\demos\lightbox\demo\lightbox.min.css" />
+    <Content Include="wet-v4\dist\demos\lightbox\demo\lightbox.min.js" />
+    <Content Include="wet-v4\dist\demos\lightbox\lightbox-en.html" />
+    <Content Include="wet-v4\dist\demos\lightbox\lightbox-fr.html" />
+    <Content Include="wet-v4\dist\demos\mathml\mathml-en.html" />
+    <Content Include="wet-v4\dist\demos\mathml\mathml-fr.html" />
+    <Content Include="wet-v4\dist\demos\menu\menu-en.html" />
+    <Content Include="wet-v4\dist\demos\menu\menu-fr.html" />
+    <Content Include="wet-v4\dist\demos\meter\demo\meter.min.css" />
+    <Content Include="wet-v4\dist\demos\meter\demo\meter.min.js" />
+    <Content Include="wet-v4\dist\demos\meter\meter-en.html" />
+    <Content Include="wet-v4\dist\demos\meter\meter-fr.html" />
+    <Content Include="wet-v4\dist\demos\multimedia\cpts-lg-en.html" />
+    <Content Include="wet-v4\dist\demos\multimedia\cpts-lg-fr.html" />
+    <Content Include="wet-v4\dist\demos\multimedia\cpts-lg2-en.html" />
+    <Content Include="wet-v4\dist\demos\multimedia\cpts-lg2-fr.html" />
+    <Content Include="wet-v4\dist\demos\multimedia\mediaplayer-transcript_captions-en.html" />
+    <Content Include="wet-v4\dist\demos\multimedia\mediaplayer-transcript_captions-fr.html" />
+    <Content Include="wet-v4\dist\demos\multimedia\multimedia-audio-en.html" />
+    <Content Include="wet-v4\dist\demos\multimedia\multimedia-audio-fr.html" />
+    <Content Include="wet-v4\dist\demos\multimedia\multimedia-en.html" />
+    <Content Include="wet-v4\dist\demos\multimedia\multimedia-fr.html" />
+    <Content Include="wet-v4\dist\demos\multimedia\multimedia-youtube-en.html" />
+    <Content Include="wet-v4\dist\demos\multimedia\multimedia-youtube-fr.html" />
+    <Content Include="wet-v4\dist\demos\overlay\demo\overlay.min.css" />
+    <Content Include="wet-v4\dist\demos\overlay\demo\overlay.min.js" />
+    <Content Include="wet-v4\dist\demos\overlay\overlay-en.html" />
+    <Content Include="wet-v4\dist\demos\overlay\overlay-fr.html" />
+    <Content Include="wet-v4\dist\demos\prettify\prettify-en.html" />
+    <Content Include="wet-v4\dist\demos\prettify\prettify-fr.html" />
+    <Content Include="wet-v4\dist\demos\progress\demo\progress.min.css" />
+    <Content Include="wet-v4\dist\demos\progress\demo\progress.min.js" />
+    <Content Include="wet-v4\dist\demos\progress\progress-en.html" />
+    <Content Include="wet-v4\dist\demos\progress\progress-fr.html" />
+    <Content Include="wet-v4\dist\demos\session-timeout\session-timeout-en.html" />
+    <Content Include="wet-v4\dist\demos\session-timeout\session-timeout-fr.html" />
+    <Content Include="wet-v4\dist\demos\share\demo\demosite.png" />
+    <Content Include="wet-v4\dist\demos\share\demo\share.min.css" />
+    <Content Include="wet-v4\dist\demos\share\share-en.html" />
+    <Content Include="wet-v4\dist\demos\share\share-fr.html" />
+    <Content Include="wet-v4\dist\demos\slider\demo\slider.min.js" />
+    <Content Include="wet-v4\dist\demos\slider\slider-en.html" />
+    <Content Include="wet-v4\dist\demos\slider\slider-fr.html" />
+    <Content Include="wet-v4\dist\demos\tables\tables-en.html" />
+    <Content Include="wet-v4\dist\demos\tables\tables-fr.html" />
+    <Content Include="wet-v4\dist\demos\tablevalidator\demo\tablevalidator.min.js" />
+    <Content Include="wet-v4\dist\demos\tablevalidator\tablevalidator-en.html" />
+    <Content Include="wet-v4\dist\demos\tablevalidator\tablevalidator-fr.html" />
+    <Content Include="wet-v4\dist\demos\tabs\tabs-carousel-en.html" />
+    <Content Include="wet-v4\dist\demos\tabs\tabs-carousel-fr.html" />
+    <Content Include="wet-v4\dist\demos\tabs\tabs-en.html" />
+    <Content Include="wet-v4\dist\demos\tabs\tabs-fr.html" />
+    <Content Include="wet-v4\dist\demos\texthighlight\texthighlight-en.html" />
+    <Content Include="wet-v4\dist\demos\texthighlight\texthighlight-fr.html" />
+    <Content Include="wet-v4\dist\demos\toggle\demo\toggle.min.css" />
+    <Content Include="wet-v4\dist\demos\toggle\toggle-en.html" />
+    <Content Include="wet-v4\dist\demos\toggle\toggle-fr.html" />
+    <Content Include="wet-v4\dist\demos\transitions\demo\transitions.min.css" />
+    <Content Include="wet-v4\dist\demos\transitions\transitions-en.html" />
+    <Content Include="wet-v4\dist\demos\transitions\transitions-fr.html" />
+    <Content Include="wet-v4\dist\demos\twitter\twitter-en.html" />
+    <Content Include="wet-v4\dist\demos\twitter\twitter-fr.html" />
+    <Content Include="wet-v4\dist\demos\wamethod\demo\wamethod.min.css" />
+    <Content Include="wet-v4\dist\demos\wamethod\demo\wamethod.min.js" />
+    <Content Include="wet-v4\dist\demos\wamethod\wamethod-AA-en.html" />
+    <Content Include="wet-v4\dist\demos\wamethod\wamethod-AA-fr.html" />
+    <Content Include="wet-v4\dist\demos\wamethod\wamethod-AAA-en.html" />
+    <Content Include="wet-v4\dist\demos\wamethod\wamethod-AAA-fr.html" />
+    <Content Include="wet-v4\dist\demos\zebra\zebra-en.html" />
+    <Content Include="wet-v4\dist\demos\zebra\zebra-fr.html" />
+    <Content Include="wet-v4\dist\dept-en.html" />
+    <Content Include="wet-v4\dist\dept-fr.html" />
+    <Content Include="wet-v4\dist\docs\bugs-en.html" />
+    <Content Include="wet-v4\dist\docs\bugs-fr.html" />
+    <Content Include="wet-v4\dist\docs\comms-en.html" />
+    <Content Include="wet-v4\dist\docs\comms-fr.html" />
+    <Content Include="wet-v4\dist\docs\css\events.min.css" />
+    <Content Include="wet-v4\dist\docs\events-en.html" />
+    <Content Include="wet-v4\dist\docs\events-fr.html" />
+    <Content Include="wet-v4\dist\docs\img\ie-compat-view.png" />
+    <Content Include="wet-v4\dist\docs\index-en.html" />
+    <Content Include="wet-v4\dist\docs\index-fr.html" />
+    <Content Include="wet-v4\dist\docs\opt-en.html" />
+    <Content Include="wet-v4\dist\docs\opt-fr.html" />
+    <Content Include="wet-v4\dist\docs\proxy-en.html" />
+    <Content Include="wet-v4\dist\docs\proxy-fr.html" />
+    <Content Include="wet-v4\dist\docs\pull-en.html" />
+    <Content Include="wet-v4\dist\docs\pull-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\accolades-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\accolades-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\arb-rra\arb-rra-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\arb-rra\arb-rra-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\archived\archived-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\archived\archived-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\cal-events\cal-events-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\cal-events\cal-events-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\charts\charts-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\charts\charts-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\collapsible-alerts\collapsible-alerts-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\collapsible-alerts\collapsible-alerts-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\country-content\country-content-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\country-content\country-content-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\data-ajax\data-ajax-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\data-ajax\data-ajax-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\data-inview\data-inview-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\data-inview\data-inview-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\data-picture\data-picture-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\data-picture\data-picture-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\datalist\datalist-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\datalist\datalist-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\datepicker\datepicker-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\datepicker\datepicker-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\details\details-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\details\details-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\dismissable-content\dismissable-content-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\dismissable-content\dismissable-content-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\docstmpl-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\docstmpl-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\equalheight\equalheight-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\equalheight\equalheight-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\favicon\favicon-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\favicon\favicon-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\feedback\feedback-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\feedback\feedback-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\feeds\feeds-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\feeds\feeds-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\footnotes\footnotes-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\footnotes\footnotes-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\formvalid\formvalid-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\formvalid\formvalid-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\GCWeb\GCWeb-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\GCWeb\GCWeb-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\geomap\geomap-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\geomap\geomap-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\lightbox\lightbox-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\lightbox\lightbox-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\mathml\mathml-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\mathml\mathml-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\menu\menu-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\menu\menu-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\meter\meter-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\meter\meter-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\multimedia\multimedia-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\multimedia\multimedia-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\other-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\other-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\overlay\overlay-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\overlay\overlay-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\plugins-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\plugins-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\polyfills-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\polyfills-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\prettify\prettify-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\prettify\prettify-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\progress\progress-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\progress\progress-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\promo-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\promo-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\session-timeout\session-timeout-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\session-timeout\session-timeout-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\share\share-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\share\share-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\slider\slider-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\slider\slider-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\tables\tables-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\tables\tables-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\tablevalidator\tablevalidator-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\tablevalidator\tablevalidator-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\tabs\tabs-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\tabs\tabs-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\texthighlight\texthighlight-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\texthighlight\texthighlight-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\theme-wet-boew\theme-wet-boew-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\theme-wet-boew\theme-wet-boew-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\themesstyle-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\themesstyle-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\toggle\toggle-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\toggle\toggle-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\transitions\transitions-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\transitions\transitions-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\twitter\twitter-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\twitter\twitter-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\variants-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\variants-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\wamethod\wamethod-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\wamethod\wamethod-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\wetsites-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\wetsites-fr.html" />
+    <Content Include="wet-v4\dist\docs\ref\zebra\zebra-en.html" />
+    <Content Include="wet-v4\dist\docs\ref\zebra\zebra-fr.html" />
+    <Content Include="wet-v4\dist\docs\server-en.html" />
+    <Content Include="wet-v4\dist\docs\server-fr.html" />
+    <Content Include="wet-v4\dist\docs\start-en.html" />
+    <Content Include="wet-v4\dist\docs\start-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\dwnld-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\dwnld-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\index-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\index-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\rdmp-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\rdmp-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0-changelog-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0-changelog-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.0-b1-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.0-b1-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.0-b2-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.0-b2-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.0-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.0-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.0-rc1-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.0-rc1-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.1-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.1-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.10-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.10-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.11-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.11-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.12-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.12-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.13-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.13-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.14-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.14-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.2-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.2-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.3-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.3-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.4-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.4-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.5-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.5-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.6-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.6-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.7-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.7-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.8+1-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.8+1-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.8+2-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.8+2-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.8-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.8-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.9-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\v4.0\v4.0.9-fr.html" />
+    <Content Include="wet-v4\dist\docs\versions\version-info-en.html" />
+    <Content Include="wet-v4\dist\docs\versions\version-info-fr.html" />
+    <Content Include="wet-v4\dist\event-en.html" />
+    <Content Include="wet-v4\dist\event-fr.html" />
+    <Content Include="wet-v4\dist\experimental\404-en-fr.html" />
+    <Content Include="wet-v4\dist\experimental\404-en.html" />
+    <Content Include="wet-v4\dist\experimental\404-fr-en.html" />
+    <Content Include="wet-v4\dist\experimental\404-fr.html" />
+    <Content Include="wet-v4\dist\experimental\act-en.html" />
+    <Content Include="wet-v4\dist\experimental\act-fr.html" />
+    <Content Include="wet-v4\dist\experimental\blog-en.html" />
+    <Content Include="wet-v4\dist\experimental\blog-fr.html" />
+    <Content Include="wet-v4\dist\experimental\campaign-en.html" />
+    <Content Include="wet-v4\dist\experimental\campaign-fr.html" />
+    <Content Include="wet-v4\dist\experimental\content-en.html" />
+    <Content Include="wet-v4\dist\experimental\content-fr.html" />
+    <Content Include="wet-v4\dist\experimental\dept-en.html" />
+    <Content Include="wet-v4\dist\experimental\dept-fr.html" />
+    <Content Include="wet-v4\dist\experimental\event-en.html" />
+    <Content Include="wet-v4\dist\experimental\event-fr.html" />
+    <Content Include="wet-v4\dist\experimental\feedback-en.html" />
+    <Content Include="wet-v4\dist\experimental\feedback-fr.html" />
+    <Content Include="wet-v4\dist\experimental\home-en.html" />
+    <Content Include="wet-v4\dist\experimental\home-fr.html" />
+    <Content Include="wet-v4\dist\experimental\index-en.html" />
+    <Content Include="wet-v4\dist\experimental\index-fr.html" />
+    <Content Include="wet-v4\dist\experimental\institution-carousel-en.html" />
+    <Content Include="wet-v4\dist\experimental\institution-carousel-fr.html" />
+    <Content Include="wet-v4\dist\experimental\institution-en.html" />
+    <Content Include="wet-v4\dist\experimental\institution-fr.html" />
+    <Content Include="wet-v4\dist\experimental\ministerial-en.html" />
+    <Content Include="wet-v4\dist\experimental\ministerial-fr.html" />
+    <Content Include="wet-v4\dist\experimental\organizational-carousel-en.html" />
+    <Content Include="wet-v4\dist\experimental\organizational-carousel-fr.html" />
+    <Content Include="wet-v4\dist\experimental\organizational-en.html" />
+    <Content Include="wet-v4\dist\experimental\organizational-fr.html" />
+    <Content Include="wet-v4\dist\experimental\regulations-en.html" />
+    <Content Include="wet-v4\dist\experimental\regulations-fr.html" />
+    <Content Include="wet-v4\dist\experimental\servermessage-en-fr.html" />
+    <Content Include="wet-v4\dist\experimental\servermessage-en.html" />
+    <Content Include="wet-v4\dist\experimental\servermessage-fr-en.html" />
+    <Content Include="wet-v4\dist\experimental\servermessage-fr.html" />
+    <Content Include="wet-v4\dist\experimental\service-en.html" />
+    <Content Include="wet-v4\dist\experimental\service-fr.html" />
+    <Content Include="wet-v4\dist\experimental\splashpage.html" />
+    <Content Include="wet-v4\dist\experimental\theme-en.html" />
+    <Content Include="wet-v4\dist\experimental\theme-fr.html" />
+    <Content Include="wet-v4\dist\experimental\topic-en.html" />
+    <Content Include="wet-v4\dist\experimental\topic-fr.html" />
+    <Content Include="wet-v4\dist\experimental\topic-lowest-en.html" />
+    <Content Include="wet-v4\dist\experimental\topic-lowest-fr.html" />
+    <Content Include="wet-v4\dist\experimental\video-en.html" />
+    <Content Include="wet-v4\dist\experimental\video-fr.html" />
+    <Content Include="wet-v4\dist\experimental\widgets-en.html" />
+    <Content Include="wet-v4\dist\experimental\widgets-fr.html" />
+    <Content Include="wet-v4\dist\feedback-en.html" />
+    <Content Include="wet-v4\dist\feedback-fr.html" />
+    <Content Include="wet-v4\dist\fonts\gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.svg" />
+    <Content Include="wet-v4\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wet-v4\dist\home-en.html" />
+    <Content Include="wet-v4\dist\home-fr.html" />
+    <Content Include="wet-v4\dist\img\218x291.png" />
+    <Content Include="wet-v4\dist\img\265x352.png" />
+    <Content Include="wet-v4\dist\img\360x203.png" />
+    <Content Include="wet-v4\dist\img\520x200.png" />
+    <Content Include="wet-v4\dist\img\520x296.png" />
+    <Content Include="wet-v4\dist\img\features\355x113.png" />
+    <Content Include="wet-v4\dist\img\promos\1170x347-1.png" />
+    <Content Include="wet-v4\dist\img\promos\1170x347-2.png" />
+    <Content Include="wet-v4\dist\img\promos\1170x347-3.png" />
+    <Content Include="wet-v4\dist\img\promos\653x194-1.png" />
+    <Content Include="wet-v4\dist\img\promos\653x194-2.png" />
+    <Content Include="wet-v4\dist\img\promos\653x194-3.png" />
+    <Content Include="wet-v4\dist\img\promos\750x222-1.png" />
+    <Content Include="wet-v4\dist\img\promos\750x222-2.png" />
+    <Content Include="wet-v4\dist\img\splash\sp-bg-2.jpg" />
+    <Content Include="wet-v4\dist\index-en.html" />
+    <Content Include="wet-v4\dist\index-fr.html" />
+    <Content Include="wet-v4\dist\index.html" />
+    <Content Include="wet-v4\dist\institution-carousel-en.html" />
+    <Content Include="wet-v4\dist\institution-carousel-fr.html" />
+    <Content Include="wet-v4\dist\institution-en.html" />
+    <Content Include="wet-v4\dist\institution-fr.html" />
+    <Content Include="wet-v4\dist\js\deps\additional-methods.min.js" />
+    <Content Include="wet-v4\dist\js\deps\geomap-lib.min.js" />
+    <Content Include="wet-v4\dist\js\deps\jquery.dataTables.min.js" />
+    <Content Include="wet-v4\dist\js\deps\jquery.flot.canvas.min.js" />
+    <Content Include="wet-v4\dist\js\deps\jquery.flot.min.js" />
+    <Content Include="wet-v4\dist\js\deps\jquery.flot.orderBars.min.js" />
+    <Content Include="wet-v4\dist\js\deps\jquery.flot.pie.min.js" />
+    <Content Include="wet-v4\dist\js\deps\jquery.magnific-popup.min.js" />
+    <Content Include="wet-v4\dist\js\deps\jquery.pjax.min.js" />
+    <Content Include="wet-v4\dist\js\deps\jquery.validate.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-apollo.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-clj.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-css.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-dart.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-go.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-hs.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-lisp.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-lua.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-ml.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-n.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-proto.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-scala.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-sql.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-tex.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-vb.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-vhdl.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-wiki.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-xq.min.js" />
+    <Content Include="wet-v4\dist\js\deps\lang-yaml.min.js" />
+    <Content Include="wet-v4\dist\js\deps\OpenLayers.min.js" />
+    <Content Include="wet-v4\dist\js\deps\prettify.min.js" />
+    <Content Include="wet-v4\dist\js\deps\proj4.min.js" />
+    <Content Include="wet-v4\dist\js\deps\tableparser.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\af.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\ar.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\bg.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\cs.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\de.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\el.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\en.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\es.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\et.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\fr.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\hi.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\hu.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\hy.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\id.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\is.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\it.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\ja.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\ko.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\lt.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\lv.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\nl.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\pl.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\pt-BR.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\pt.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\ru.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\sk.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\sq.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\th.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\tr.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\uk.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\vi.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\zh-Hans.min.js" />
+    <Content Include="wet-v4\dist\js\i18n\zh.min.js" />
+    <Content Include="wet-v4\dist\js\ie8-wet-boew.min.js" />
+    <Content Include="wet-v4\dist\js\ie8-wet-boew2.min.js" />
+    <Content Include="wet-v4\dist\js\polyfills\datalist.min.js" />
+    <Content Include="wet-v4\dist\js\polyfills\datalist_dynamic.min.js" />
+    <Content Include="wet-v4\dist\js\polyfills\datepicker.min.js" />
+    <Content Include="wet-v4\dist\js\polyfills\details.min.js" />
+    <Content Include="wet-v4\dist\js\polyfills\jawsariafixes.min.js" />
+    <Content Include="wet-v4\dist\js\polyfills\meter.min.js" />
+    <Content Include="wet-v4\dist\js\polyfills\mobile.min.js" />
+    <Content Include="wet-v4\dist\js\polyfills\progress.min.js" />
+    <Content Include="wet-v4\dist\js\polyfills\slider.min.js" />
+    <Content Include="wet-v4\dist\js\polyfills\slider_wrapper.min.js" />
+    <Content Include="wet-v4\dist\js\polyfills\svg.min.js" />
+    <Content Include="wet-v4\dist\js\theme.min.js" />
+    <Content Include="wet-v4\dist\js\wet-boew.min.js" />
+    <Content Include="wet-v4\dist\Licence-fr.html" />
+    <Content Include="wet-v4\dist\Licence-fr.txt" />
+    <Content Include="wet-v4\dist\License-en.html" />
+    <Content Include="wet-v4\dist\License-en.txt" />
+    <Content Include="wet-v4\dist\ministerial-en.html" />
+    <Content Include="wet-v4\dist\ministerial-fr.html" />
+    <Content Include="wet-v4\dist\organizational-carousel-en.html" />
+    <Content Include="wet-v4\dist\organizational-carousel-fr.html" />
+    <Content Include="wet-v4\dist\organizational-en.html" />
+    <Content Include="wet-v4\dist\organizational-fr.html" />
+    <Content Include="wet-v4\dist\partners\content-en.html" />
+    <Content Include="wet-v4\dist\partners\content-fr.html" />
+    <Content Include="wet-v4\dist\partners\feedback-en.html" />
+    <Content Include="wet-v4\dist\partners\feedback-fr.html" />
+    <Content Include="wet-v4\dist\partners\index-en.html" />
+    <Content Include="wet-v4\dist\partners\index-fr.html" />
+    <Content Include="wet-v4\dist\partners\video-en.html" />
+    <Content Include="wet-v4\dist\partners\video-fr.html" />
+    <Content Include="wet-v4\dist\partners\widgets-en.html" />
+    <Content Include="wet-v4\dist\partners\widgets-fr.html" />
+    <Content Include="wet-v4\dist\regulations-en.html" />
+    <Content Include="wet-v4\dist\regulations-fr.html" />
+    <Content Include="wet-v4\dist\servermessage-en-fr.html" />
+    <Content Include="wet-v4\dist\servermessage-en.html" />
+    <Content Include="wet-v4\dist\servermessage-fr-en.html" />
+    <Content Include="wet-v4\dist\servermessage-fr.html" />
+    <Content Include="wet-v4\dist\service-en.html" />
+    <Content Include="wet-v4\dist\service-fr.html" />
+    <Content Include="wet-v4\dist\servicecomplexe\index-en.html" />
+    <Content Include="wet-v4\dist\servicecomplexe\index-fr.html" />
+    <Content Include="wet-v4\dist\servicecomplexe\page2-en.html" />
+    <Content Include="wet-v4\dist\servicecomplexe\page2-fr.html" />
+    <Content Include="wet-v4\dist\servicecomplexe\page3-en.html" />
+    <Content Include="wet-v4\dist\servicecomplexe\page3-fr.html" />
+    <Content Include="wet-v4\dist\servicecomplexe\page4-en.html" />
+    <Content Include="wet-v4\dist\servicecomplexe\page4-fr.html" />
+    <Content Include="wet-v4\dist\servicecomplexe\page5-en.html" />
+    <Content Include="wet-v4\dist\servicecomplexe\page5-fr.html" />
+    <Content Include="wet-v4\dist\servicecomplexe\page6-en.html" />
+    <Content Include="wet-v4\dist\servicecomplexe\page6-fr.html" />
+    <Content Include="wet-v4\dist\splashpage.html" />
+    <Content Include="wet-v4\dist\theme-en.html" />
+    <Content Include="wet-v4\dist\theme-fr.html" />
+    <Content Include="wet-v4\dist\topic-en.html" />
+    <Content Include="wet-v4\dist\topic-fr.html" />
+    <Content Include="wet-v4\dist\topic-lowest-en.html" />
+    <Content Include="wet-v4\dist\topic-lowest-fr.html" />
+    <Content Include="wet-v4\dist\unmin\404-en-fr.html" />
+    <Content Include="wet-v4\dist\unmin\404-en.html" />
+    <Content Include="wet-v4\dist\unmin\404-fr-en.html" />
+    <Content Include="wet-v4\dist\unmin\404-fr.html" />
+    <Content Include="wet-v4\dist\unmin\404.html" />
+    <Content Include="wet-v4\dist\unmin\act-en.html" />
+    <Content Include="wet-v4\dist\unmin\act-fr.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-af.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-ar.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-bg.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-cs.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-de.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-el.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-en.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-es.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-et.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-fr.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-hi.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-hu.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-hy.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-id.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-is.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-it.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-ja.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-ko.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-lt.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-lv.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-nl.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-pl.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-pt-BR.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-pt.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-ru.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-sk.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-sq.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-th.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-tr.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-uk.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-vi.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-zh-Hans.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\mobmenu-zh.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-af.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-ar.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-bg.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-cs.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-de.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-el.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-en.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-es.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-et.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-fr.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-hi.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-hu.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-hy.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-id.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-is.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-it.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-ja.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-ko.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-lt.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-lv.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-nl.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-pl.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-pt-BR.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-pt.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-ru.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-sk.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-sq.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-th.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-tr.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-uk.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-vi.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-zh-Hans.html" />
+    <Content Include="wet-v4\dist\unmin\ajax\sitemenu-zh.html" />
+    <Content Include="wet-v4\dist\unmin\assets\backdrop.png" />
+    <Content Include="wet-v4\dist\unmin\assets\cloud-popup-relative.png" />
+    <Content Include="wet-v4\dist\unmin\assets\favicon-mobile.png" />
+    <Content Include="wet-v4\dist\unmin\assets\favicon.ico" />
+    <Content Include="wet-v4\dist\unmin\assets\fd-slider-sprite.png" />
+    <Content Include="wet-v4\dist\unmin\assets\feedback.png" />
+    <Content Include="wet-v4\dist\unmin\assets\loading.png" />
+    <Content Include="wet-v4\dist\unmin\assets\mediacontrols.html" />
+    <Content Include="wet-v4\dist\unmin\assets\mobile.png" />
+    <Content Include="wet-v4\dist\unmin\assets\multimedia.swf" />
+    <Content Include="wet-v4\dist\unmin\assets\sig-blk-en.png" />
+    <Content Include="wet-v4\dist\unmin\assets\sig-blk-en.svg" />
+    <Content Include="wet-v4\dist\unmin\assets\sig-blk-fr.png" />
+    <Content Include="wet-v4\dist\unmin\assets\sig-blk-fr.svg" />
+    <Content Include="wet-v4\dist\unmin\assets\sig-en.png" />
+    <Content Include="wet-v4\dist\unmin\assets\sig-en.svg" />
+    <Content Include="wet-v4\dist\unmin\assets\sig-fr.png" />
+    <Content Include="wet-v4\dist\unmin\assets\sig-fr.svg" />
+    <Content Include="wet-v4\dist\unmin\assets\sig-spl.png" />
+    <Content Include="wet-v4\dist\unmin\assets\sig-spl.svg" />
+    <Content Include="wet-v4\dist\unmin\assets\social.png" />
+    <Content Include="wet-v4\dist\unmin\assets\sprites_geomap.png" />
+    <Content Include="wet-v4\dist\unmin\assets\sprites_share.png" />
+    <Content Include="wet-v4\dist\unmin\assets\tuwyt.jpg" />
+    <Content Include="wet-v4\dist\unmin\assets\wmms-alt.png" />
+    <Content Include="wet-v4\dist\unmin\assets\wmms-blk.png" />
+    <Content Include="wet-v4\dist\unmin\assets\wmms-blk.svg" />
+    <Content Include="wet-v4\dist\unmin\assets\wmms-spl.png" />
+    <Content Include="wet-v4\dist\unmin\assets\wmms-spl.svg" />
+    <Content Include="wet-v4\dist\unmin\assets\wmms.png" />
+    <Content Include="wet-v4\dist\unmin\assets\wmms.svg" />
+    <Content Include="wet-v4\dist\unmin\assets\zoom-minus-mini.png" />
+    <Content Include="wet-v4\dist\unmin\assets\zoom-plus-mini.png" />
+    <Content Include="wet-v4\dist\unmin\assets\zoom-world-mini.png" />
+    <Content Include="wet-v4\dist\unmin\blog-en.html" />
+    <Content Include="wet-v4\dist\unmin\blog-fr.html" />
+    <Content Include="wet-v4\dist\unmin\campaign-en.html" />
+    <Content Include="wet-v4\dist\unmin\campaign-fr.html" />
+    <Content Include="wet-v4\dist\unmin\content-en.html" />
+    <Content Include="wet-v4\dist\unmin\content-fr.html" />
+    <Content Include="wet-v4\dist\unmin\css\ie8-wet-boew.css" />
+    <Content Include="wet-v4\dist\unmin\css\messages-ie.css" />
+    <Content Include="wet-v4\dist\unmin\css\messages.css" />
+    <Content Include="wet-v4\dist\unmin\css\mobile-centre-ie.css" />
+    <Content Include="wet-v4\dist\unmin\css\mobile-centre.css" />
+    <Content Include="wet-v4\dist\unmin\css\noscript.css" />
+    <Content Include="wet-v4\dist\unmin\css\polyfills\datalist.css" />
+    <Content Include="wet-v4\dist\unmin\css\polyfills\datepicker.css" />
+    <Content Include="wet-v4\dist\unmin\css\polyfills\details.css" />
+    <Content Include="wet-v4\dist\unmin\css\polyfills\meter.css" />
+    <Content Include="wet-v4\dist\unmin\css\polyfills\progress.css" />
+    <Content Include="wet-v4\dist\unmin\css\polyfills\slider.css" />
+    <Content Include="wet-v4\dist\unmin\css\social-media-centre-ie.css" />
+    <Content Include="wet-v4\dist\unmin\css\social-media-centre.css" />
+    <Content Include="wet-v4\dist\unmin\css\theme-srv.css" />
+    <Content Include="wet-v4\dist\unmin\css\theme.css" />
+    <Content Include="wet-v4\dist\unmin\css\wet-boew.css" />
+    <Content Include="wet-v4\dist\unmin\demos\arb-rra\arb-rra-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\arb-rra\arb-rra-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\arb-rra\arb-rra-planAccess-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\arb-rra\arb-rra-planAccess-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\arb-rra\arb-rra-terms-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\arb-rra\arb-rra-terms-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\arb-rra\demo\arb-rra.css" />
+    <Content Include="wet-v4\dist\unmin\demos\archived\archived-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\archived\archived-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\archived\demo\archived.css" />
+    <Content Include="wet-v4\dist\unmin\demos\cal-events\cal-events-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\cal-events\cal-events-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\charts\charts-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\charts\charts-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\charts\custom-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\charts\custom-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\charts\labelsandreferencevalue-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\charts\labelsandreferencevalue-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\charts\piecustom-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\charts\piecustom-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\charts\testing-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\charts\testing-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\collapsible-alerts\collapsible-alerts-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\collapsible-alerts\collapsible-alerts-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\country-content\country-content-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\country-content\country-content-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\data-ajax\data-ajax-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\data-ajax\data-ajax-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\data-ajax\demo\data-ajax.css" />
+    <Content Include="wet-v4\dist\unmin\demos\data-inview\data-inview-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\data-inview\data-inview-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\data-inview\demo\data-inview.css" />
+    <Content Include="wet-v4\dist\unmin\demos\data-inview\demo\data-inview.js" />
+    <Content Include="wet-v4\dist\unmin\demos\data-picture\data-picture-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\data-picture\data-picture-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\datalist\datalist-dynamic-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\datalist\datalist-dynamic-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\datalist\datalist-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\datalist\datalist-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\datalist\demo\datalist_dynamic.js" />
+    <Content Include="wet-v4\dist\unmin\demos\datepicker\datepicker-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\datepicker\datepicker-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\details\details-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\details\details-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\dismissable-content\dismissable-content-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\dismissable-content\dismissable-content-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\equalheight\demo\equalheight.css" />
+    <Content Include="wet-v4\dist\unmin\demos\equalheight\equalheight-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\equalheight\equalheight-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\favicon\favicon-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\favicon\favicon-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\feedback\demo\feedback.css" />
+    <Content Include="wet-v4\dist\unmin\demos\feedback\demo\feedback.js" />
+    <Content Include="wet-v4\dist\unmin\demos\feedback\feedback-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\feedback\feedback-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\feeds\demo\feeds.css" />
+    <Content Include="wet-v4\dist\unmin\demos\feeds\feeds-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\feeds\feeds-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\footnotes\footnotes-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\footnotes\footnotes-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\formvalid\formvalid-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\formvalid\formvalid-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\client_functions.js" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\config-en.js" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\config-esri-en.js" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\config-esri-fr.js" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\config-fr.js" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\configwms-en.js" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\configwms-fr.js" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\trafficcamera.png" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\trafficcamera_active.png" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\geomap-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\geomap-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\index-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\index-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\demo\1_b.jpg" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\demo\1_s.jpg" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\demo\2_b.jpg" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\demo\2_s.jpg" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\demo\3_b.jpg" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\demo\3_s.jpg" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\demo\4_b.jpg" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\demo\4_s.jpg" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\demo\5_b.jpg" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\demo\5_s.jpg" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\demo\lightbox.css" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\demo\lightbox.js" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\lightbox-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\lightbox\lightbox-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\mathml\mathml-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\mathml\mathml-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\menu\menu-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\menu\menu-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\meter\demo\meter.css" />
+    <Content Include="wet-v4\dist\unmin\demos\meter\demo\meter.js" />
+    <Content Include="wet-v4\dist\unmin\demos\meter\meter-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\meter\meter-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\multimedia\cpts-lg-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\multimedia\cpts-lg-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\multimedia\cpts-lg2-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\multimedia\cpts-lg2-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\multimedia\mediaplayer-transcript_captions-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\multimedia\mediaplayer-transcript_captions-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\multimedia\multimedia-audio-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\multimedia\multimedia-audio-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\multimedia\multimedia-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\multimedia\multimedia-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\multimedia\multimedia-youtube-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\multimedia\multimedia-youtube-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\overlay\demo\overlay.css" />
+    <Content Include="wet-v4\dist\unmin\demos\overlay\demo\overlay.js" />
+    <Content Include="wet-v4\dist\unmin\demos\overlay\overlay-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\overlay\overlay-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\prettify\prettify-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\prettify\prettify-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\progress\demo\progress.css" />
+    <Content Include="wet-v4\dist\unmin\demos\progress\demo\progress.js" />
+    <Content Include="wet-v4\dist\unmin\demos\progress\progress-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\progress\progress-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\session-timeout\session-timeout-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\session-timeout\session-timeout-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\share\demo\demosite.png" />
+    <Content Include="wet-v4\dist\unmin\demos\share\demo\share.css" />
+    <Content Include="wet-v4\dist\unmin\demos\share\share-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\share\share-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\slider\demo\slider.js" />
+    <Content Include="wet-v4\dist\unmin\demos\slider\slider-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\slider\slider-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\tables\tables-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\tables\tables-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\tablevalidator\demo\tablevalidator.js" />
+    <Content Include="wet-v4\dist\unmin\demos\tablevalidator\tablevalidator-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\tablevalidator\tablevalidator-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\tabs\tabs-carousel-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\tabs\tabs-carousel-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\tabs\tabs-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\tabs\tabs-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\texthighlight\texthighlight-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\texthighlight\texthighlight-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\toggle\demo\toggle.css" />
+    <Content Include="wet-v4\dist\unmin\demos\toggle\toggle-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\toggle\toggle-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\transitions\demo\transitions.css" />
+    <Content Include="wet-v4\dist\unmin\demos\transitions\transitions-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\transitions\transitions-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\twitter\twitter-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\twitter\twitter-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\wamethod\demo\wamethod.css" />
+    <Content Include="wet-v4\dist\unmin\demos\wamethod\demo\wamethod.js" />
+    <Content Include="wet-v4\dist\unmin\demos\wamethod\wamethod-AA-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\wamethod\wamethod-AA-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\wamethod\wamethod-AAA-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\wamethod\wamethod-AAA-fr.html" />
+    <Content Include="wet-v4\dist\unmin\demos\zebra\zebra-en.html" />
+    <Content Include="wet-v4\dist\unmin\demos\zebra\zebra-fr.html" />
+    <Content Include="wet-v4\dist\unmin\dept-en.html" />
+    <Content Include="wet-v4\dist\unmin\dept-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\bugs-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\bugs-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\comms-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\comms-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\css\events.css" />
+    <Content Include="wet-v4\dist\unmin\docs\events-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\events-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\img\ie-compat-view.png" />
+    <Content Include="wet-v4\dist\unmin\docs\index-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\index-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\opt-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\opt-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\proxy-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\proxy-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\pull-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\pull-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\accolades-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\accolades-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\arb-rra\arb-rra-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\arb-rra\arb-rra-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\archived\archived-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\archived\archived-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\cal-events\cal-events-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\cal-events\cal-events-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\charts\charts-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\charts\charts-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\collapsible-alerts\collapsible-alerts-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\collapsible-alerts\collapsible-alerts-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\country-content\country-content-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\country-content\country-content-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\data-ajax\data-ajax-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\data-ajax\data-ajax-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\data-inview\data-inview-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\data-inview\data-inview-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\data-picture\data-picture-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\data-picture\data-picture-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\datalist\datalist-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\datalist\datalist-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\datepicker\datepicker-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\datepicker\datepicker-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\details\details-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\details\details-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\dismissable-content\dismissable-content-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\dismissable-content\dismissable-content-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\docstmpl-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\docstmpl-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\equalheight\equalheight-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\equalheight\equalheight-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\favicon\favicon-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\favicon\favicon-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\feedback\feedback-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\feedback\feedback-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\feeds\feeds-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\feeds\feeds-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\footnotes\footnotes-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\footnotes\footnotes-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\formvalid\formvalid-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\formvalid\formvalid-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\GCWeb\GCWeb-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\GCWeb\GCWeb-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\geomap\geomap-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\geomap\geomap-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\lightbox\lightbox-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\lightbox\lightbox-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\mathml\mathml-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\mathml\mathml-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\menu\menu-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\menu\menu-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\meter\meter-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\meter\meter-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\multimedia\multimedia-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\multimedia\multimedia-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\other-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\other-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\overlay\overlay-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\overlay\overlay-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\plugins-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\plugins-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\polyfills-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\polyfills-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\prettify\prettify-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\prettify\prettify-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\progress\progress-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\progress\progress-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\promo-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\promo-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\session-timeout\session-timeout-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\session-timeout\session-timeout-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\share\share-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\share\share-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\slider\slider-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\slider\slider-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\tables\tables-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\tables\tables-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\tablevalidator\tablevalidator-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\tablevalidator\tablevalidator-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\tabs\tabs-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\tabs\tabs-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\texthighlight\texthighlight-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\texthighlight\texthighlight-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\theme-wet-boew\theme-wet-boew-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\theme-wet-boew\theme-wet-boew-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\themesstyle-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\themesstyle-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\toggle\toggle-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\toggle\toggle-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\transitions\transitions-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\transitions\transitions-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\twitter\twitter-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\twitter\twitter-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\variants-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\variants-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\wamethod\wamethod-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\wamethod\wamethod-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\wetsites-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\wetsites-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\zebra\zebra-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\ref\zebra\zebra-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\server-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\server-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\start-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\start-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\dwnld-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\dwnld-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\index-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\index-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\rdmp-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\rdmp-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0-changelog-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0-changelog-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.0-b1-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.0-b1-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.0-b2-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.0-b2-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.0-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.0-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.0-rc1-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.0-rc1-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.1-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.1-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.10-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.10-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.11-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.11-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.12-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.12-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.13-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.13-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.14-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.14-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.2-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.2-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.3-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.3-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.4-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.4-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.5-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.5-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.6-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.6-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.7-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.7-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.8+1-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.8+1-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.8+2-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.8+2-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.8-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.8-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.9-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\v4.0\v4.0.9-fr.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\version-info-en.html" />
+    <Content Include="wet-v4\dist\unmin\docs\versions\version-info-fr.html" />
+    <Content Include="wet-v4\dist\unmin\event-en.html" />
+    <Content Include="wet-v4\dist\unmin\event-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\404-en-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\404-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\404-fr-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\404-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\act-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\act-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\blog-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\blog-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\campaign-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\campaign-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\content-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\content-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\dept-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\dept-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\event-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\event-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\feedback-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\feedback-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\home-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\home-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\index-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\index-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\institution-carousel-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\institution-carousel-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\institution-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\institution-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\ministerial-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\ministerial-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\organizational-carousel-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\organizational-carousel-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\organizational-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\organizational-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\regulations-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\regulations-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\servermessage-en-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\servermessage-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\servermessage-fr-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\servermessage-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\service-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\service-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\theme-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\theme-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\topic-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\topic-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\topic-lowest-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\topic-lowest-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\video-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\video-fr.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\widgets-en.html" />
+    <Content Include="wet-v4\dist\unmin\experimental\widgets-fr.html" />
+    <Content Include="wet-v4\dist\unmin\feedback-en.html" />
+    <Content Include="wet-v4\dist\unmin\feedback-fr.html" />
+    <Content Include="wet-v4\dist\unmin\fonts\gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.svg" />
+    <Content Include="wet-v4\dist\unmin\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wet-v4\dist\unmin\home-en.html" />
+    <Content Include="wet-v4\dist\unmin\home-fr.html" />
+    <Content Include="wet-v4\dist\unmin\img\218x291.png" />
+    <Content Include="wet-v4\dist\unmin\img\265x352.png" />
+    <Content Include="wet-v4\dist\unmin\img\360x203.png" />
+    <Content Include="wet-v4\dist\unmin\img\520x200.png" />
+    <Content Include="wet-v4\dist\unmin\img\520x296.png" />
+    <Content Include="wet-v4\dist\unmin\img\features\355x113.png" />
+    <Content Include="wet-v4\dist\unmin\img\promos\1170x347-1.png" />
+    <Content Include="wet-v4\dist\unmin\img\promos\1170x347-2.png" />
+    <Content Include="wet-v4\dist\unmin\img\promos\1170x347-3.png" />
+    <Content Include="wet-v4\dist\unmin\img\promos\653x194-1.png" />
+    <Content Include="wet-v4\dist\unmin\img\promos\653x194-2.png" />
+    <Content Include="wet-v4\dist\unmin\img\promos\653x194-3.png" />
+    <Content Include="wet-v4\dist\unmin\img\promos\750x222-1.png" />
+    <Content Include="wet-v4\dist\unmin\img\promos\750x222-2.png" />
+    <Content Include="wet-v4\dist\unmin\img\splash\sp-bg-2.jpg" />
+    <Content Include="wet-v4\dist\unmin\index-en.html" />
+    <Content Include="wet-v4\dist\unmin\index-fr.html" />
+    <Content Include="wet-v4\dist\unmin\index.html" />
+    <Content Include="wet-v4\dist\unmin\institution-carousel-en.html" />
+    <Content Include="wet-v4\dist\unmin\institution-carousel-fr.html" />
+    <Content Include="wet-v4\dist\unmin\institution-en.html" />
+    <Content Include="wet-v4\dist\unmin\institution-fr.html" />
+    <Content Include="wet-v4\dist\unmin\js\deps\additional-methods.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\geomap-lib.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\jquery.dataTables.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\jquery.flot.canvas.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\jquery.flot.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\jquery.flot.orderBars.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\jquery.flot.pie.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\jquery.magnific-popup.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\jquery.pjax.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\jquery.validate.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-apollo.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-clj.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-css.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-dart.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-go.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-hs.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-lisp.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-lua.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-ml.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-n.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-proto.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-scala.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-sql.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-tex.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-vb.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-vhdl.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-wiki.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-xq.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\lang-yaml.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\OpenLayers.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\prettify.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\proj4.js" />
+    <Content Include="wet-v4\dist\unmin\js\deps\tableparser.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\af.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\ar.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\bg.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\cs.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\de.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\el.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\en.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\es.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\et.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\fr.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\hi.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\hu.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\hy.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\id.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\is.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\it.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\ja.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\ko.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\lt.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\lv.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\nl.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\pl.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\pt-BR.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\pt.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\ru.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\sk.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\sq.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\th.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\tr.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\uk.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\vi.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\zh-Hans.js" />
+    <Content Include="wet-v4\dist\unmin\js\i18n\zh.js" />
+    <Content Include="wet-v4\dist\unmin\js\ie8-wet-boew.js" />
+    <Content Include="wet-v4\dist\unmin\js\ie8-wet-boew2.js" />
+    <Content Include="wet-v4\dist\unmin\js\polyfills\datalist.js" />
+    <Content Include="wet-v4\dist\unmin\js\polyfills\datalist_dynamic.js" />
+    <Content Include="wet-v4\dist\unmin\js\polyfills\datepicker.js" />
+    <Content Include="wet-v4\dist\unmin\js\polyfills\details.js" />
+    <Content Include="wet-v4\dist\unmin\js\polyfills\jawsariafixes.js" />
+    <Content Include="wet-v4\dist\unmin\js\polyfills\meter.js" />
+    <Content Include="wet-v4\dist\unmin\js\polyfills\mobile.js" />
+    <Content Include="wet-v4\dist\unmin\js\polyfills\progress.js" />
+    <Content Include="wet-v4\dist\unmin\js\polyfills\slider.js" />
+    <Content Include="wet-v4\dist\unmin\js\polyfills\slider_wrapper.js" />
+    <Content Include="wet-v4\dist\unmin\js\polyfills\svg.js" />
+    <Content Include="wet-v4\dist\unmin\js\theme.js" />
+    <Content Include="wet-v4\dist\unmin\js\wet-boew.js" />
+    <Content Include="wet-v4\dist\unmin\Licence-fr.html" />
+    <Content Include="wet-v4\dist\unmin\License-en.html" />
+    <Content Include="wet-v4\dist\unmin\ministerial-en.html" />
+    <Content Include="wet-v4\dist\unmin\ministerial-fr.html" />
+    <Content Include="wet-v4\dist\unmin\organizational-carousel-en.html" />
+    <Content Include="wet-v4\dist\unmin\organizational-carousel-fr.html" />
+    <Content Include="wet-v4\dist\unmin\organizational-en.html" />
+    <Content Include="wet-v4\dist\unmin\organizational-fr.html" />
+    <Content Include="wet-v4\dist\unmin\partners\content-en.html" />
+    <Content Include="wet-v4\dist\unmin\partners\content-fr.html" />
+    <Content Include="wet-v4\dist\unmin\partners\feedback-en.html" />
+    <Content Include="wet-v4\dist\unmin\partners\feedback-fr.html" />
+    <Content Include="wet-v4\dist\unmin\partners\index-en.html" />
+    <Content Include="wet-v4\dist\unmin\partners\index-fr.html" />
+    <Content Include="wet-v4\dist\unmin\partners\video-en.html" />
+    <Content Include="wet-v4\dist\unmin\partners\video-fr.html" />
+    <Content Include="wet-v4\dist\unmin\partners\widgets-en.html" />
+    <Content Include="wet-v4\dist\unmin\partners\widgets-fr.html" />
+    <Content Include="wet-v4\dist\unmin\regulations-en.html" />
+    <Content Include="wet-v4\dist\unmin\regulations-fr.html" />
+    <Content Include="wet-v4\dist\unmin\servermessage-en-fr.html" />
+    <Content Include="wet-v4\dist\unmin\servermessage-en.html" />
+    <Content Include="wet-v4\dist\unmin\servermessage-fr-en.html" />
+    <Content Include="wet-v4\dist\unmin\servermessage-fr.html" />
+    <Content Include="wet-v4\dist\unmin\service-en.html" />
+    <Content Include="wet-v4\dist\unmin\service-fr.html" />
+    <Content Include="wet-v4\dist\unmin\servicecomplexe\index-en.html" />
+    <Content Include="wet-v4\dist\unmin\servicecomplexe\index-fr.html" />
+    <Content Include="wet-v4\dist\unmin\servicecomplexe\page2-en.html" />
+    <Content Include="wet-v4\dist\unmin\servicecomplexe\page2-fr.html" />
+    <Content Include="wet-v4\dist\unmin\servicecomplexe\page3-en.html" />
+    <Content Include="wet-v4\dist\unmin\servicecomplexe\page3-fr.html" />
+    <Content Include="wet-v4\dist\unmin\servicecomplexe\page4-en.html" />
+    <Content Include="wet-v4\dist\unmin\servicecomplexe\page4-fr.html" />
+    <Content Include="wet-v4\dist\unmin\servicecomplexe\page5-en.html" />
+    <Content Include="wet-v4\dist\unmin\servicecomplexe\page5-fr.html" />
+    <Content Include="wet-v4\dist\unmin\servicecomplexe\page6-en.html" />
+    <Content Include="wet-v4\dist\unmin\servicecomplexe\page6-fr.html" />
+    <Content Include="wet-v4\dist\unmin\splashpage.html" />
+    <Content Include="wet-v4\dist\unmin\theme-en.html" />
+    <Content Include="wet-v4\dist\unmin\theme-fr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\404-en-fr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\404-en.html" />
+    <Content Include="wet-v4\dist\unmin\theme\404-fr-en.html" />
+    <Content Include="wet-v4\dist\unmin\theme\404-fr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-af.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-ar.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-bg.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-cs.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-de.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-el.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-en.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-es.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-et.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-fr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-hi.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-hu.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-hy.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-id.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-is.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-it.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-ja.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-ko.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-lt.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-lv.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nl.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-af.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-ar.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-bg.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-cs.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-de.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-el.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-en.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-es.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-et.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-fr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-hi.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-hu.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-hy.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-id.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-is.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-it.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-ja.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-ko.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-lt.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-lv.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-nl.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-pl.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-pt-BR.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-pt.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-ru.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-sk.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-sq.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-th.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-tr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-uk.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-vi.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-zh-Hans.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlang-zh.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-af.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-ar.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-bg.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-cs.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-de.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-el.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-en.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-es.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-et.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-fr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-hi.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-hu.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-hy.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-id.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-is.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-it.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-ja.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-ko.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-lt.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-lv.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-nl.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-pl.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-pt-BR.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-pt.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-ru.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-sk.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-sq.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-th.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-tr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-uk.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-vi.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-zh-Hans.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nosearchlangsitemenubc-zh.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-af.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-ar.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-bg.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-cs.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-de.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-el.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-en.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-es.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-et.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-fr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-hi.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-hu.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-hy.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-id.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-is.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-it.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-ja.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-ko.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-lt.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-lv.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-nl.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-pl.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-pt-BR.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-pt.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-ru.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-sk.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-sq.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-th.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-tr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-uk.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-vi.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-zh-Hans.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-nositemenubc-zh.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-pl.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-pt-BR.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-pt.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-ru.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-af.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-ar.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-bg.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-cs.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-de.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-el.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-en.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-es.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-et.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-fr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-hi.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-hu.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-hy.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-id.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-is.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-it.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-ja.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-ko.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-lt.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-lv.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-nl.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-pl.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-pt-BR.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-pt.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-ru.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-sk.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-sq.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-th.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-tr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-uk.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-vi.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-zh-Hans.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-secmenu-zh.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-sk.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-sq.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-th.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-tr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-uk.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-vi.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-zh-Hans.html" />
+    <Content Include="wet-v4\dist\unmin\theme\content-zh.html" />
+    <Content Include="wet-v4\dist\unmin\theme\index-en.html" />
+    <Content Include="wet-v4\dist\unmin\theme\index-fr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-af.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-ar.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-bg.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-cs.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-de.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-el.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-en-fr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-en.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-es.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-et.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-fr-en.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-fr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-hi.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-hu.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-hy.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-id.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-is.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-it.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-ja.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-ko.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-lt.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-lv.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-nl.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-pl.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-pt-BR.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-pt.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-ru.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-sk.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-sq.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-th.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-tr.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-uk.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-vi.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-zh-Hans.html" />
+    <Content Include="wet-v4\dist\unmin\theme\servermessage-zh.html" />
+    <Content Include="wet-v4\dist\unmin\theme\splashpage-en.html" />
+    <Content Include="wet-v4\dist\unmin\theme\splashpage-fr.html" />
+    <Content Include="wet-v4\dist\unmin\topic-en.html" />
+    <Content Include="wet-v4\dist\unmin\topic-fr.html" />
+    <Content Include="wet-v4\dist\unmin\topic-lowest-en.html" />
+    <Content Include="wet-v4\dist\unmin\topic-lowest-fr.html" />
+    <Content Include="wet-v4\dist\unmin\video-en.html" />
+    <Content Include="wet-v4\dist\unmin\video-fr.html" />
+    <Content Include="wet-v4\dist\unmin\widgets-en.html" />
+    <Content Include="wet-v4\dist\unmin\widgets-fr.html" />
+    <Content Include="wet-v4\dist\video-en.html" />
+    <Content Include="wet-v4\dist\video-fr.html" />
+    <Content Include="wet-v4\dist\widgets-en.html" />
+    <Content Include="wet-v4\dist\widgets-fr.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content-en.aspx.cs">
+      <DependentUpon>content-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content-en.aspx.designer.cs">
+      <DependentUpon>content-en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content-fr.aspx.cs">
+      <DependentUpon>content-fr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content-fr.aspx.designer.cs">
+      <DependentUpon>content-fr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Aside.ascx.cs">
+      <DependentUpon>Aside.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Aside.ascx.designer.cs">
+      <DependentUpon>Aside.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Breadcrumb.ascx.cs">
+      <DependentUpon>Breadcrumb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Breadcrumb.ascx.designer.cs">
+      <DependentUpon>Breadcrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DateModified.ascx.cs">
+      <DependentUpon>DateModified.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DateModified.ascx.designer.cs">
+      <DependentUpon>DateModified.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LanguageSelection.ascx.cs">
+      <DependentUpon>LanguageSelection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LanguageSelection.ascx.designer.cs">
+      <DependentUpon>LanguageSelection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Search.ascx.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Search.ascx.designer.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchAndMenus.ascx.cs">
+      <DependentUpon>SearchAndMenus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SearchAndMenus.ascx.designer.cs">
+      <DependentUpon>SearchAndMenus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SectionMenu.ascx.cs">
+      <DependentUpon>SectionMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SectionMenu.ascx.designer.cs">
+      <DependentUpon>SectionMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SiteMenu.ascx.cs">
+      <DependentUpon>SiteMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SiteMenu.ascx.designer.cs">
+      <DependentUpon>SiteMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TopOfPage.ascx.cs">
+      <DependentUpon>TopOfPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TopOfPage.ascx.designer.cs">
+      <DependentUpon>TopOfPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\GCWeb-Video.master.cs">
+      <DependentUpon>GCWeb-Video.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\GCWeb-Video.master.designer.cs">
+      <DependentUpon>GCWeb-Video.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\GCWeb.master.cs">
+      <DependentUpon>GCWeb.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\GCWeb.master.designer.cs">
+      <DependentUpon>GCWeb.master</DependentUpon>
+    </Compile>
+    <Compile Include="partners\index-en.aspx.cs">
+      <DependentUpon>index-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="partners\index-en.aspx.designer.cs">
+      <DependentUpon>index-en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="partners\index-fr.aspx.cs">
+      <DependentUpon>index-fr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="partners\index-fr.aspx.designer.cs">
+      <DependentUpon>index-fr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MasterPages\Wet-Boew.Master.cs">
+      <DependentUpon>Wet-Boew.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\WET-BOEW.Master.designer.cs">
+      <DependentUpon>Wet-Boew.Master</DependentUpon>
+    </Compile>
+    <Compile Include="video-en.aspx.cs">
+      <DependentUpon>video-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="video-en.aspx.designer.cs">
+      <DependentUpon>video-en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="video-fr.aspx.cs">
+      <DependentUpon>video-fr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="video-fr.aspx.designer.cs">
+      <DependentUpon>video-fr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WetBoewConfiguration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPages\GCWeb.master" />
+    <Content Include="SiteMaps\Web.fr.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="partners\Web.sitemap" />
+    <Content Include="partners\Web.fr.sitemap" />
+    <Content Include="partners\Web.config" />
+    <Content Include="SiteMaps\Footer.sitemap" />
+    <Content Include="SiteMaps\Footer.fr.sitemap" />
+    <Content Include="SiteMaps\Header.sitemap" />
+    <Content Include="SiteMaps\Header.fr.sitemap" />
+    <Content Include="MasterPages\GCWeb-Video.master" />
+    <None Include="partners\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="partners\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="SiteMaps\Aside.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SiteMaps\Aside.fr.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="MasterPages\Wet-Boew.Master" />
+    <Content Include="SiteMaps\Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="wet-v4\dist\demos\geomap\demo\sample.atom" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\sample.csv" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\sample.json" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\sample.kml" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\sample.rss" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\sample_fr.atom" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\sample_fr.kml" />
+    <Content Include="wet-v4\dist\demos\geomap\demo\sample_fr.rss" />
+    <Content Include="wet-v4\dist\fonts\gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.eot" />
+    <Content Include="wet-v4\dist\fonts\gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.ttf" />
+    <Content Include="wet-v4\dist\fonts\gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.woff" />
+    <Content Include="wet-v4\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="wet-v4\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="wet-v4\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wet-v4\dist\README.md" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\sample.atom" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\sample.csv" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\sample.json" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\sample.kml" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\sample.rss" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\sample_fr.atom" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\sample_fr.kml" />
+    <Content Include="wet-v4\dist\unmin\demos\geomap\demo\sample_fr.rss" />
+    <Content Include="wet-v4\dist\unmin\fonts\gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.eot" />
+    <Content Include="wet-v4\dist\unmin\fonts\gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.ttf" />
+    <Content Include="wet-v4\dist\unmin\fonts\gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.woff" />
+    <Content Include="wet-v4\dist\unmin\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="wet-v4\dist\unmin\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="wet-v4\dist\unmin\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wet-v4\dist\unmin\fonts\_base.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\App_LocalResources\Footer.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\App_LocalResources\Footer.ascx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Localization\Localization.csproj">
+      <Project>{c96a2f65-ea3c-49bb-aef6-e62fd770c186}</Project>
+      <Name>Localization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54589</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53423/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
